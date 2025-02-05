@@ -3,7 +3,7 @@
 import { Button } from "../../ui/button";
 import { Badge } from "../../ui/badge";
 import { ArrowRightIcon } from "lucide-react";
-import { Section } from "../../ui/section";
+
 import { Mockup, MockupFrame } from "../../ui/mockup";
 import Glow from "../../ui/glow";
 import Image from "next/image";
@@ -27,7 +27,7 @@ export default function Hero() {
   }
 
   return (
-    <Section className="fade-bottom overflow-hidden pb-0 sm:pb-0 md:pb-0">
+    <section className="fade-bottom overflow-hidden pb-0 sm:pb-0 md:pb-0">
       <div className="mx-auto flex max-w-container flex-col gap-12 pt-16 sm:gap-24">
         <div className="flex flex-col items-center gap-6 text-center sm:gap-12">
           <Badge variant="outline" className="animate-appear">
@@ -82,6 +82,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-    </Section>
+    </section>
   );
 }
