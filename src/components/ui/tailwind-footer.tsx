@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { ReactNode } from "react";
 const Footer = () => {
   return (
     <>
@@ -208,7 +209,11 @@ const Footer = () => {
 
 export default Footer;
 
-const LinkGroup = ({ children, header }) => {
+interface LinkGroupProps {
+  children: ReactNode;
+  header: string;
+}
+const LinkGroup: React.FC<LinkGroupProps> = ({ children, header }) => {
   return (
     <>
       <div className="w-full px-4 sm:w-1/2 lg:w-2/12">
@@ -222,16 +227,20 @@ const LinkGroup = ({ children, header }) => {
     </>
   );
 };
+interface NavLinkProps {
+  link: string; // Should match the prop name in JSX
+  label: string;
+}
 
-const NavLink = ({ link, label }) => {
+const NavLink: React.FC<NavLinkProps> = ({ link, label }) => {
   return (
     <li>
-      <a
+      <Link
         href={link}
         className="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
       >
         {label}
-      </a>
+      </Link>
     </li>
   );
 };
