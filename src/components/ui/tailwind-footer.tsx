@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from "next/image";
 const Footer = () => {
   return (
     <>
@@ -9,12 +9,12 @@ const Footer = () => {
             <div className="w-full px-4 sm:w-2/3 lg:w-3/12">
               <div className="mb-10 w-full">
                 <a href="/#" className="mb-6 inline-block max-w-[160px]">
-                  <img
+                  <Image
                     src="https://cdn.tailgrids.com/2.0/image/assets/images/logo/logo.svg"
                     alt="logo"
                     className="max-w-full dark:hidden"
                   />
-                  <img
+                  <Image
                     src="https://cdn.tailgrids.com/2.0/image/assets/images/logo/logo-white.svg"
                     alt="logo"
                     className="max-w-full hidden dark:block"
