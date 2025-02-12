@@ -1,4 +1,3 @@
-import { ModeToggle } from "../../ui/mode-toggle";
 import {
   Footer,
   FooterColumn,
