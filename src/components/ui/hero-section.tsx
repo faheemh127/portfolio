@@ -1,4 +1,5 @@
 "use client";
+import ShootingStarBorder from "./shooting-star-border";
 export default function HeroSection() {
   return (
     <div className="bg-white min-h-screen h-screen">
@@ -30,26 +31,31 @@ export default function HeroSection() {
                 </div>
               </div> */}
               <div className="text-center">
-                <h1 className="text-5xl font-semibold tracking-tight text-balance text-white sm:text-8xl font-anton tracking-wide uppercase">
-                  I Make Top-Notch
-                  <br />
-                  <span className="text-indigo-500">
-                    Custom Web Applications
-                  </span>
-                </h1>
+                {/* Shadow for hero text */}
+
+                <div className="relative">
+                  <div className="absolute left-1/2 top-0 z-[-1] h-[80vh] w-20 -translate-x-1/2 -translate-y-32 rotate-45 bg-indigo-500 blur-[180px]"></div>
+                  <h1 className="text-5xl font-semibold tracking-tight text-balance text-white sm:text-8xl tracking-wide uppercase font-anton">
+                    I Make Top-Notch
+                    <br />
+                    <span className="text-indigo-500">
+                      Custom Web Applications
+                    </span>
+                  </h1>
+                </div>
                 <p className="mt-8 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8 text-muted">
                   High-performance React.js and Next.js web apps, crafted with
                   precision and passion.
                 </p>
 
-                
                 <div className="mt-10 flex items-center justify-center gap-x-6">
-                  <a
+                  {/* <a
                     href="#"
                     className="rounded-md bg-indigo-600 px-10 py-4 text-lg font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                   >
                     Book a call
-                  </a>
+                  </a> */}
+                  <ShootingStarBorder />
                   {/* <a href="#" className="text-sm/6 font-semibold text-muted">
                     Learn more <span aria-hidden="true">→</span>
                   </a> */}
