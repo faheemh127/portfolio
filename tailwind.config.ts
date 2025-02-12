@@ -9,6 +9,9 @@ export default {
   ],
   theme: {
   	extend: {
+		// fontFamily:{
+		// 	anton: "Anton",
+		// },
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',

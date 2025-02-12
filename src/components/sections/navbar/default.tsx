@@ -12,8 +12,8 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <header className="sticky top-0 z-50 -mb-4 px-4 pb-4">
-      <div className="fade-bottom absolute left-0 h-24 w-full bg-background/15 backdrop-blur-lg"></div>
+    <header className="sticky top-0 z-50 -mb-4 px-4 pb-4 max-w-7xl m-auto">
+      <div className="fade-bottom absolute left-0 h-24 w-full"></div>
       <div className="relative mx-auto max-w-container">
         <NavbarComponent>
           <NavbarLeft>
@@ -22,7 +22,7 @@ export default function Navbar() {
               className="flex items-center gap-2 text-xl font-bold"
             >
               <LaunchUI />
-              Launch UI
+              Faheem
             </Link>
             <Navigation />
           </NavbarLeft>
@@ -30,7 +30,7 @@ export default function Navbar() {
             <Link href="/" className="hidden text-sm md:block">
               Sign in
             </Link>
-            <Button variant="default" asChild>
+            <Button variant="default" className=" bg-indigo-600" asChild>
               <Link href="/">Get Started</Link>
             </Button>
             <Sheet>

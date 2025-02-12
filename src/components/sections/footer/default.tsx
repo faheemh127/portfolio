@@ -16,11 +16,11 @@ export default function FooterSection() {
             <FooterColumn className="col-span-2 sm:col-span-3 md:col-span-1">
               <div className="flex items-center gap-2">
                 <LaunchUI />
-                <h3 className="text-xl font-bold">Launch UI</h3>
+                <h3 className="text-xl font-bold">Muhammad Faheem Hassan</h3>
               </div>
             </FooterColumn>
             <FooterColumn>
-              <h3 className="text-md pt-1 font-semibold">Product</h3>
+              <h3 className="text-md pt-1 font-semibold">Portfolio</h3>
               <Link
                 href="/"
                 className="text-sm text-muted-foreground"
@@ -35,7 +35,7 @@ export default function FooterSection() {
               </Link>
             </FooterColumn>
             <FooterColumn>
-              <h3 className="text-md pt-1 font-semibold">Company</h3>
+              <h3 className="text-md pt-1 font-semibold">Clients</h3>
               <Link
                 href="/"
                 className="text-sm text-muted-foreground"
@@ -78,11 +78,11 @@ export default function FooterSection() {
             </FooterColumn>
           </FooterContent>
           <FooterBottom>
-            <div>© 2025 Mikołaj Dobrucki. All rights reserved</div>
+            <div>© 2025 Muhammad Faheem Hassan. All rights reserved</div>
             <div className="flex items-center gap-4">
               <Link href="/">Privacy Policy</Link>
               <Link href="/">Terms of Service</Link>
-              <ModeToggle />
+              
             </div>
           </FooterBottom>
         </Footer>
