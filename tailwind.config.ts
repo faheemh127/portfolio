@@ -30,6 +30,7 @@ export default {
       // 	anton: "Anton",
       // },
       colors: {
+        primaryColor: "#4f46e5",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {

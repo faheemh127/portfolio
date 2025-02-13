@@ -4,6 +4,7 @@ import {
   Navbar as NavbarComponent,
   NavbarLeft,
   NavbarRight,
+  NavbarCenter,
 } from "../../ui/navbar";
 import { Sheet, SheetContent, SheetTrigger } from "../../ui/sheet";
 import { Menu } from "lucide-react";
@@ -24,14 +25,13 @@ export default function Navbar() {
               <LaunchUI />
               Faheem
             </Link>
-            <Navigation />
           </NavbarLeft>
+          <NavbarCenter>
+            <Navigation />
+          </NavbarCenter>
           <NavbarRight>
-            <Link href="/" className="hidden text-sm md:block">
-              Sign in
-            </Link>
             <Button variant="default" className=" bg-indigo-600" asChild>
-              <Link href="/">Get Started</Link>
+              <Link href="/">Contact Me</Link>
             </Button>
             <Sheet>
               <SheetTrigger asChild>
