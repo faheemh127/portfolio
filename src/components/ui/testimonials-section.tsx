@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from "next/image";
 function TestimonialsSection() {
   return (
     <>
@@ -11,10 +11,10 @@ function TestimonialsSection() {
                 Words from Others
               </div>
               <h1 className="mb-5 text-3xl font-semibold text-white md:text-center md:text-5xl">
-                It's not just us.
+                It&apos;s not just us.
               </h1>
               <p className="text-xl text-gray-100 md:text-center md:text-2xl">
-                Here's what others have to say about us.
+                Here&apos;s what others have to say about us.
               </p>
             </div>
           </div>
@@ -27,7 +27,7 @@ function TestimonialsSection() {
                   <a href="" className="cursor-pointer">
                     <div className="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
                       <div className="flex items-center space-x-4">
-                        <img
+                        <Image
                           src="https://pbs.twimg.com/profile_images/1276461929934942210/cqNhNk6v_400x400.jpg"
                           className="w-12 h-12 bg-center bg-cover border rounded-full"
                           alt="Kanye West"
@@ -54,7 +54,7 @@ function TestimonialsSection() {
                   <a href="" className="cursor-pointer">
                     <div className="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
                       <div className="flex items-center space-x-4">
-                        <img
+                        <Image
                           src="https://pbs.twimg.com/profile_images/1535420431766671360/Pwq-1eJc_400x400.jpg"
                           className="w-12 h-12 bg-center bg-cover border rounded-full"
                           alt="Tim Cook"
@@ -81,7 +81,7 @@ function TestimonialsSection() {
                   <a href="" className="cursor-pointer">
                     <div className="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
                       <div className="flex items-center space-x-4">
-                        <img
+                        <Image
                           src="https://pbs.twimg.com/profile_images/1276461929934942210/cqNhNk6v_400x400.jpg"
                           className="w-12 h-12 bg-center bg-cover border rounded-full"
                           alt="Kanye West"
@@ -108,7 +108,7 @@ function TestimonialsSection() {
                   <a href="" className="cursor-pointer">
                     <div className="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
                       <div className="flex items-center space-x-4">
-                        <img
+                        <Image
                           src="https://pbs.twimg.com/profile_images/1535420431766671360/Pwq-1eJc_400x400.jpg"
                           className="w-12 h-12 bg-center bg-cover border rounded-full"
                           alt="Tim Cook"
@@ -138,7 +138,7 @@ function TestimonialsSection() {
                   <a href="" className="cursor-pointer">
                     <div className="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
                       <div className="flex items-center space-x-4">
-                        <img
+                        <Image
                           src="https://pbs.twimg.com/profile_images/1375285353146327052/y6jeByyD_400x400.jpg"
                           className="w-12 h-12 bg-center bg-cover border rounded-full"
                           alt="Parag Agrawal"
@@ -168,7 +168,7 @@ function TestimonialsSection() {
                   <a href="" className="cursor-pointer">
                     <div className="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
                       <div className="flex items-center space-x-4">
-                        <img
+                        <Image
                           src="https://pbs.twimg.com/profile_images/1535420431766671360/Pwq-1eJc_400x400.jpg"
                           className="w-12 h-12 bg-center bg-cover border rounded-full"
                           alt="Tim Cook"
@@ -195,7 +195,7 @@ function TestimonialsSection() {
                   <a href="" className="cursor-pointer">
                     <div className="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
                       <div className="flex items-center space-x-4">
-                        <img
+                        <Image
                           src="https://pbs.twimg.com/profile_images/1375285353146327052/y6jeByyD_400x400.jpg"
                           className="w-12 h-12 bg-center bg-cover border rounded-full"
                           alt="Parag Agrawal"
@@ -225,7 +225,7 @@ function TestimonialsSection() {
                   <a href="" className="cursor-pointer">
                     <div className="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
                       <div className="flex items-center space-x-4">
-                        <img
+                        <Image
                           src="https://pbs.twimg.com/profile_images/1535420431766671360/Pwq-1eJc_400x400.jpg"
                           className="w-12 h-12 bg-center bg-cover border rounded-full"
                           alt="Tim Cook"
@@ -255,7 +255,7 @@ function TestimonialsSection() {
                   <a href="" className="cursor-pointer">
                     <div className="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
                       <div className="flex items-center space-x-4">
-                        <img
+                        <Image
                           src="https://pbs.twimg.com/profile_images/1221837516816306177/_Ld4un5A_400x400.jpg"
                           className="w-12 h-12 bg-center bg-cover border rounded-full"
                           alt="Satya Nadella"
@@ -285,7 +285,7 @@ function TestimonialsSection() {
                   <a href="" className="cursor-pointer">
                     <div className="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
                       <div className="flex items-center space-x-4">
-                        <img
+                        <Image
                           src="https://pbs.twimg.com/profile_images/516916920482672641/3jCeLgFb_400x400.jpeg"
                           className="w-12 h-12 bg-center bg-cover border rounded-full"
                           alt="Dan Schulman"
@@ -311,7 +311,7 @@ function TestimonialsSection() {
                   <a href="" className="cursor-pointer">
                     <div className="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
                       <div className="flex items-center space-x-4">
-                        <img
+                        <Image
                           src="https://pbs.twimg.com/profile_images/1221837516816306177/_Ld4un5A_400x400.jpg"
                           className="w-12 h-12 bg-center bg-cover border rounded-full"
                           alt="Satya Nadella"
@@ -341,7 +341,7 @@ function TestimonialsSection() {
                   <a href="" className="cursor-pointer">
                     <div className="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
                       <div className="flex items-center space-x-4">
-                        <img
+                        <Image
                           src="https://pbs.twimg.com/profile_images/516916920482672641/3jCeLgFb_400x400.jpeg"
                           className="w-12 h-12 bg-center bg-cover border rounded-full"
                           alt="Dan Schulman"
