@@ -10,7 +10,7 @@ const BookACall = () => {
         <span className="backdrop absolute inset-[1px] rounded-md bg-indigo-600 transition-colors duration-200 group-hover:bg-indigo-700 " />
         <span className="text z-10 text-stone-100 text-base md:text-lg flex gap-2 items-center">
           <PhoneCall size={15} />
-          <span>Book a call</span>
+          <span className="text-stone-200">Book a call</span>
         </span>
       </button>
     </div>

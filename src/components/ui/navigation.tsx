@@ -41,7 +41,7 @@ export default function Navigation() {
                   </Link>
                 </NavigationMenuLink>
               </li>
-              <ListItem href="/" title="Introduction">
+              <ListItem href="/" title="Wordpress">
                 Re-usable components built using Radix UI and Tailwind CSS.
               </ListItem>
               <ListItem href="/" title="Installation">
@@ -56,11 +56,11 @@ export default function Navigation() {
         <NavigationMenuItem>
           <Link href="/" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Trusted By
+              Happy Clients
             </NavigationMenuLink>
           </Link>
           <Link href="/" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+            <NavigationMenuLink  className={navigationMenuTriggerStyle()}>
               LinkedIn
             </NavigationMenuLink>
           </Link>
