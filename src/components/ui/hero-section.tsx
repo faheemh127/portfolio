@@ -3,10 +3,15 @@
 import BookACall from "./book-a-call";
 import BtnDownloadResume from "./btn-download-resume";
 import HeroBoxes from "./hero-boxes";
+
+import { Users } from "lucide-react";
+import { Laptop } from "lucide-react";
+import { FolderKanban } from "lucide-react";
+import { TextTypingEffectWithTextsFadeOut } from "@/components/ui/text-typing-effect-with-texts-fadeout";
 export default function HeroSection() {
   return (
     <div className="bg-white min-h-screen h-auto overflow-x-hidden">
-      <div className=" h-full w-full bg-slate-950">
+      <div className=" h-full w-full bg-slate-950 min-h-screen">
         <div className="h-full bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,rgba(79,79,79,0.10)_1px,transparent_1px),linear-gradient(to_bottom,rgba(79,79,79,0.10)_1px,transparent_1px)] bg-[size:40px_40px]">
           <div className="relative isolate px-6 pt-14 lg:px-8 ">
             <div
@@ -45,20 +50,36 @@ export default function HeroSection() {
                     </span>
                   </h1>
                 </div>
-                <p className="mt-4 text-lg font-medium text-pretty text-gray-300 sm:text-2xl/5 m-auto ">
+                <TextTypingEffectWithTextsFadeOut />
+                {/* <p className="mt-4 text-lg font-medium text-pretty text-gray-300 sm:text-2xl/5 m-auto ">
                   High-performance React.js and Next.js web apps, crafted with
                   precision and passion.
-                </p>
+                </p> */}
 
                 <div className="mt-10 flex items-center justify-center gap-3 md:gap-6 mt-5 md:mt-16">
                   <BtnDownloadResume />
                   <BookACall />
                 </div>
 
-                <div className="gap-5 mt-20 justify-center flex-col md:flex-row hidden md:flex">
-                  <HeroBoxes>5+</HeroBoxes>
-                  <HeroBoxes>200+</HeroBoxes>
-                  <HeroBoxes>Data</HeroBoxes>
+                <div className="gap-8 mt-20 justify-center flex-col md:flex-row hidden md:flex">
+                  <HeroBoxes
+                    subText="Years Of Experience"
+                    icon={<Laptop className="text-white" size={28} />}
+                  >
+                    5+
+                  </HeroBoxes>
+                  <HeroBoxes
+                    subText="Happy Clients"
+                    icon={<Users className="text-white" size={28} />}
+                  >
+                    26+
+                  </HeroBoxes>
+                  <HeroBoxes
+                    subText="Delivered Projects"
+                    icon={<FolderKanban className="text-white" size={28} />}
+                  >
+                    38+
+                  </HeroBoxes>
                 </div>
               </div>
             </div>

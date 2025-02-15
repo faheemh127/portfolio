@@ -30,7 +30,9 @@ function TestimonialsSection() {
                         <Image
                           src="https://pbs.twimg.com/profile_images/1276461929934942210/cqNhNk6v_400x400.jpg"
                           className="w-12 h-12 bg-center bg-cover border rounded-full"
-                          alt="Kanye West"
+                          width={12}
+                          height={12}
+                          alt="Kanye West" 
                         />
                         <div>
                           <h3 className="text-lg font-semibold text-white">
@@ -57,7 +59,7 @@ function TestimonialsSection() {
                         <Image
                           src="https://pbs.twimg.com/profile_images/1535420431766671360/Pwq-1eJc_400x400.jpg"
                           className="w-12 h-12 bg-center bg-cover border rounded-full"
-                          alt="Tim Cook"
+                          alt="Tim Cook" width={12} height={12}
                         />
                         <div>
                           <h3 className="text-lg font-semibold text-white">
@@ -75,6 +77,9 @@ function TestimonialsSection() {
                   </a>
                 </div>
               </li>
+
+
+{/*               
               <li className="text-sm leading-6">
                 <div className="relative group">
                   <div className="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200"></div>
@@ -84,7 +89,8 @@ function TestimonialsSection() {
                         <Image
                           src="https://pbs.twimg.com/profile_images/1276461929934942210/cqNhNk6v_400x400.jpg"
                           className="w-12 h-12 bg-center bg-cover border rounded-full"
-                          alt="Kanye West"
+
+                          alt="Kanye West" width={12}
                         />
                         <div>
                           <h3 className="text-lg font-semibold text-white">
@@ -111,7 +117,7 @@ function TestimonialsSection() {
                         <Image
                           src="https://pbs.twimg.com/profile_images/1535420431766671360/Pwq-1eJc_400x400.jpg"
                           className="w-12 h-12 bg-center bg-cover border rounded-full"
-                          alt="Tim Cook"
+                          alt="Tim Cook" width={12}
                         />
                         <div>
                           <h3 className="text-lg font-semibold text-white">
@@ -141,7 +147,7 @@ function TestimonialsSection() {
                         <Image
                           src="https://pbs.twimg.com/profile_images/1375285353146327052/y6jeByyD_400x400.jpg"
                           className="w-12 h-12 bg-center bg-cover border rounded-full"
-                          alt="Parag Agrawal"
+                          alt="Parag Agrawal" width={12}
                         />
                         <div>
                           <h3 className="text-lg font-semibold text-white">
@@ -171,7 +177,7 @@ function TestimonialsSection() {
                         <Image
                           src="https://pbs.twimg.com/profile_images/1535420431766671360/Pwq-1eJc_400x400.jpg"
                           className="w-12 h-12 bg-center bg-cover border rounded-full"
-                          alt="Tim Cook"
+                          alt="Tim Cook" width={12}
                         />
                         <div>
                           <h3 className="text-lg font-semibold text-white">
@@ -198,7 +204,7 @@ function TestimonialsSection() {
                         <Image
                           src="https://pbs.twimg.com/profile_images/1375285353146327052/y6jeByyD_400x400.jpg"
                           className="w-12 h-12 bg-center bg-cover border rounded-full"
-                          alt="Parag Agrawal"
+                          alt="Parag Agrawal" width={12}
                         />
                         <div>
                           <h3 className="text-lg font-semibold text-white">
@@ -228,7 +234,7 @@ function TestimonialsSection() {
                         <Image
                           src="https://pbs.twimg.com/profile_images/1535420431766671360/Pwq-1eJc_400x400.jpg"
                           className="w-12 h-12 bg-center bg-cover border rounded-full"
-                          alt="Tim Cook"
+                          alt="Tim Cook" width={12}
                         />
                         <div>
                           <h3 className="text-lg font-semibold text-white">
@@ -258,7 +264,7 @@ function TestimonialsSection() {
                         <Image
                           src="https://pbs.twimg.com/profile_images/1221837516816306177/_Ld4un5A_400x400.jpg"
                           className="w-12 h-12 bg-center bg-cover border rounded-full"
-                          alt="Satya Nadella"
+                          alt="Satya Nadella" width={12}
                         />
                         <div>
                           <h3 className="text-lg font-semibold text-white">
@@ -288,7 +294,7 @@ function TestimonialsSection() {
                         <Image
                           src="https://pbs.twimg.com/profile_images/516916920482672641/3jCeLgFb_400x400.jpeg"
                           className="w-12 h-12 bg-center bg-cover border rounded-full"
-                          alt="Dan Schulman"
+                          alt="Dan Schulman" width={12}
                         />
                         <div>
                           <h3 className="text-lg font-semibold text-white">
@@ -314,7 +320,7 @@ function TestimonialsSection() {
                         <Image
                           src="https://pbs.twimg.com/profile_images/1221837516816306177/_Ld4un5A_400x400.jpg"
                           className="w-12 h-12 bg-center bg-cover border rounded-full"
-                          alt="Satya Nadella"
+                          alt="Satya Nadella" width={12}
                         />
                         <div>
                           <h3 className="text-lg font-semibold text-white">
@@ -344,7 +350,7 @@ function TestimonialsSection() {
                         <Image
                           src="https://pbs.twimg.com/profile_images/516916920482672641/3jCeLgFb_400x400.jpeg"
                           className="w-12 h-12 bg-center bg-cover border rounded-full"
-                          alt="Dan Schulman"
+                          alt="Dan Schulman" width={12}
                         />
                         <div>
                           <h3 className="text-lg font-semibold text-white">
@@ -360,7 +366,7 @@ function TestimonialsSection() {
                     </div>
                   </a>
                 </div>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

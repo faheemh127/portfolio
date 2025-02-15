@@ -3,7 +3,7 @@ import { Computer } from "lucide-react";
 import { useRef, useEffect } from "react";
 export const HeroBoxes: React.FC<{
   children: React.ReactNode;
-}> = ({ children }) => {
+}> = ({ children, subText, icon }) => {
   const boxRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -34,26 +34,21 @@ export const HeroBoxes: React.FC<{
       //     "--bg-color": "linear-gradient(#1E293B,#1E293B",
       //   } as CSSProperties
       // }
-      className="flex h-[auto] w-full md:w-1/5 items-center justify-center rounded-lg border-2 border-[#0000] p-3 [background:padding-box_var(--bg-color),border-box_var(--border-color)] py-4"
+      className="flex h-[auto] w-full md:w-1/4 items-center justify-center rounded-lg border-2 border-[#0000] p-3 [background:padding-box_var(--bg-color),border-box_var(--border-color)] py-4 border border-indigo-600 bg-dark"
+      style={{
+        backgroundColor: "rgb(79, 70, 229,0.1)",
+      }}
     >
-      <div className="flex items-center">
+      <div className="flex items-center w-full">
         <div
-          className="icon"
-          style={{
-            paddingRight: "20px",
-          }}
+          className="icon border-r-2 border-indigo-500 px-6"
         >
-          <Computer className="text-white" size={28} />
+          {icon}
+          
         </div>
-        <div
-          style={{
-            borderLeft: "1px solid white",
-            paddingRight: "20px",
-          }}
-          className="flex flex-col text-left pl-4"
-        >
-          <h3 className="text-stone-200 text-3xl">{children}</h3>
-          <p className="text-stone-300">Trusted Clients</p>
+        <div className="flex flex-col text-left pl-4">
+          <h3 className="text-indigo-100 text-3xl font-bold">{children}</h3>
+          <p className="text-stone-300">{subText}</p>
         </div>
       </div>
     </div>

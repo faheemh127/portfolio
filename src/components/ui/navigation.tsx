@@ -15,7 +15,6 @@ import {
 import LaunchUI from "../logos/launch-ui";
 import Link from "next/link";
 
-
 export default function Navigation() {
   return (
     <NavigationMenu className="hidden md:flex">
@@ -44,7 +43,7 @@ export default function Navigation() {
               <ListItem href="/" title="Wordpress">
                 Re-usable components built using Radix UI and Tailwind CSS.
               </ListItem>
-              <ListItem href="/" title="Installation">
+              <ListItem href="/" title="Next.js">
                 How to install dependencies and structure your app.
               </ListItem>
               <ListItem href="/" title="Typography">
@@ -60,7 +59,7 @@ export default function Navigation() {
             </NavigationMenuLink>
           </Link>
           <Link href="/" legacyBehavior passHref>
-            <NavigationMenuLink  className={navigationMenuTriggerStyle()}>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               LinkedIn
             </NavigationMenuLink>
           </Link>
