@@ -42,7 +42,7 @@ const testimonials = [
     {
       id: 5,
       image:
-        "https://pbs.twimg.com/profile_images/1375285353146327052/y6jeByyD_400x400.jpg",
+        "https://pbs.twimg.com/profile_images/1535420431766671360/Pwq-1eJc_400x400.jpg",
       name: "Parag Agrawal",
       role: "CEO of Twitter",
       text: "Enim neque volutpat ac tincidunt vitae semper. Mattis aliquam faucibus purus in massa tempor. Neque vitae tempus quam pellentesque nec. Turpis cursus in hac habitasse platea dictumst.",
@@ -85,7 +85,7 @@ const testimonials = [
     {
       id: 10,
       image:
-        "https://pbs.twimg.com/profile_images/516916920482672641/3jCeLgFb_400x400.jpeg",
+        "https://pbs.twimg.com/profile_images/1221837516816306177/_Ld4un5A_400x400.jpg",
       name: "Dan Schulman",
       role: "CEO of PayPal",
       text: "Quam pellentesque nec nam aliquam sem et tortor consequat id. Enim sit amet venenatis urna cursus.",
@@ -118,10 +118,10 @@ function TestimonialsSection() {
             <div className="inline-block px-3 py-1 text-sm font-semibold text-indigo-100 rounded-lg md:text-center text-cn bg-[#202c47] bg-opacity-60 hover:cursor-pointer hover:bg-opacity-40">
               Words from Others
             </div>
-            <h1 className="mb-5 text-3xl font-semibold text-white md:text-center md:text-5xl">
+            <h1 className="text-indigo-600 mb-5 text-3xl font-semibold md:text-center md:text-5xl font-anton ">
               It&apos;s not just us.
             </h1>
-            <p className="text-xl text-gray-100 md:text-center md:text-2xl">
+            <p className="text-xl text-stone-200 md:text-center md:text-2xl">
               Here&apos;s what others have to say about us.
             </p>
           </div>

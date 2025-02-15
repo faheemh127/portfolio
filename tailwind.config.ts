@@ -12,8 +12,13 @@ export default {
       animation: {
         flip: "flip 6s infinite steps(2, end)",
         rotate: "rotate 3s linear infinite both",
+        "loog-scroll": "loop-scroll 50s linear infinite",
       },
       keyframes: {
+        "loop-scroll": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-100%)" },
+        },
         flip: {
           to: {
             transform: "rotate(360deg)",

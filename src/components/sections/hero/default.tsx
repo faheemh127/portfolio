@@ -34,10 +34,7 @@ export default function Hero() {
             <span className="text-muted-foreground">
               New version of Launch UI is out!
             </span>
-            <Link
-              href="/"
-              className="flex items-center gap-1"
-            >
+            <Link href="/" className="flex items-center gap-1">
               Get started
               <ArrowRightIcon className="h-3 w-3" />
             </Link>

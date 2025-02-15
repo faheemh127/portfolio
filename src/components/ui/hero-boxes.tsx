@@ -54,7 +54,7 @@ export const HeroBoxes: React.FC<HeroBoxesProps> = ({ children, subText, icon })
           
         </div>
         <div className="flex flex-col text-left pl-4">
-          <h3 className="text-indigo-100 text-3xl font-bold">{children}</h3>
+          <h3 className="text-white text-3xl font-bold">{children}</h3>
           <p className="text-stone-300">{subText}</p>
         </div>
       </div>
