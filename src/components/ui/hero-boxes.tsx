@@ -1,5 +1,5 @@
 "use client";
-import { Computer } from "lucide-react";
+
 import { useRef, useEffect } from "react";
 export const HeroBoxes: React.FC<{
   children: React.ReactNode;

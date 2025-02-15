@@ -45,7 +45,7 @@ export default function Navbar() {
                 </Button>
               </SheetTrigger>
               <SheetContent side="right">
-                <SheetTitle>Menu</SheetTitle> // Add a Sheet title
+                <SheetTitle>Menu</SheetTitle>
                 <nav className="grid gap-6 text-lg font-medium">
                   <Link
                     href="/"
