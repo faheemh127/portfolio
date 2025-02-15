@@ -6,7 +6,7 @@ import {
   NavbarRight,
   NavbarCenter,
 } from "../../ui/navbar";
-import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "../../ui/sheet";
+import { Sheet, SheetContent, SheetTrigger } from "../../ui/sheet";
 import { Menu } from "lucide-react";
 import LaunchUI from "../../logos/launch-ui";
 import Link from "next/link";
@@ -45,8 +45,8 @@ export default function Navbar() {
                 </Button>
               </SheetTrigger>
               <SheetContent side="right">
-                <SheetTitle>Menu</SheetTitle>
                 <nav className="grid gap-6 text-lg font-medium">
+                  
                   <Link
                     href="/"
                     className="flex items-center gap-2 text-xl font-bold"

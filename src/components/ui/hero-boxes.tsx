@@ -1,10 +1,17 @@
 "use client";
 
-import { useRef, useEffect } from "react";
-export const HeroBoxes: React.FC<{
+import React, { useRef, useEffect } from "react";
+
+
+interface HeroBoxesProps {
   children: React.ReactNode;
-}> = ({ children, subText, icon }) => {
-  const boxRef = useRef<HTMLDivElement>(null);
+  subText: string,
+  icon: React.ReactNode,
+}
+
+
+export const HeroBoxes: React.FC<HeroBoxesProps> = ({ children, subText, icon }) => {
+  const boxRef = useRef<HTMLDivElement>(null); 
 
   useEffect(() => {
     const boxElement = boxRef.current;
