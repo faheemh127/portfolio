@@ -16,8 +16,12 @@ export default {
       },
       keyframes: {
         "loop-scroll": {
-          from: { transform: "translateX(0)" },
-          to: { transform: "translateX(-100%)" },
+          from: {
+            transform: "translateX(0)",
+          },
+          to: {
+            transform: "translateX(-100%)",
+          },
         },
         flip: {
           to: {
@@ -30,10 +34,6 @@ export default {
           },
         },
       },
-
-      // fontFamily:{
-      // 	anton: "Anton",
-      // },
       colors: {
         primaryColor: "#4f46e5",
         background: "hsl(var(--background))",

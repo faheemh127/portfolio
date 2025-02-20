@@ -69,13 +69,13 @@ export const TextTypingEffectWithTextsFadeOut = () => {
       clearTimeout(circleTimeout);
       clearTimeout(textTimeout);
     };
-  }, [textIndex]);
+  }, [textIndex, timeToTypeText]);
 
   return (
     <>
-      <div className="leading-20 mt-4 md:mt-8 md:min-h-[40px]">
+      <div className="leading-20 mt-4 md:mt-4 md:min-h-[40px]">
         <span
-          className={`inline-flex items-center  duration-300  font-medium text-pretty text-stone-300 sm:text-2xl/5 md:text-2xl mx-auto min-h-[5rem] md:min-h-0 leading-6 md:leading-6"  ${
+          className={`inline-flex items-center  duration-300  font-medium text-pretty text-stone-300 text-lg md:text-2xl mx-auto min-h-[5rem] md:min-h-0 leading-6 md:leading-6"  ${
             fadeText ? "opacity-1 translate-y-0" : "translate-y-2 opacity-0"
           }`}
           key={textIndex}

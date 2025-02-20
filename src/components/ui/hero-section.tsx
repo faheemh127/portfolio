@@ -26,16 +26,7 @@ export default function HeroSection() {
                 className="relative left-[calc(50%-11rem)] aspect-1155/678 w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
               />
             </div>
-            <div className="mx-auto max-w-7xl py-32  lg:py-25">
-              {/* <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-                <div className="relative rounded-full px-3 py-1 text-sm/6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-                  Announcing our next round of funding.{" "}
-                  <a href="#" className="font-semibold text-indigo-600">
-                    <span aria-hidden="true" className="absolute inset-0" />
-                    Read more <span aria-hidden="true">&rarr;</span>
-                  </a>
-                </div>
-              </div> */}
+            <div className="mx-auto max-w-7xl py-52  lg:py-25">
               <div className="text-center">
                 {/* Shadow for hero text */}
 
@@ -45,7 +36,7 @@ export default function HeroSection() {
                   <h1 className="text-5xl font-semibold tracking-tight text-balance text-stone-200 sm:text-8xl tracking-wide uppercase font-anton">
                     I Make Top-Notch
                     <br />
-                    <span className="text-indigo-500">
+                    <span className="text-indigo-600">
                       Custom Web Applications
                     </span>
                   </h1>
@@ -55,10 +46,9 @@ export default function HeroSection() {
                   High-performance React.js and Next.js web apps, crafted with
                   precision and passion.
                 </p> */}
-
-                <div className="mt-10 flex items-center justify-center gap-3 md:gap-6 mt-5 md:mt-16">
-                  <BtnDownloadResume />
+                <div className="flex items-center justify-center gap-3 md:gap-6 mt-5 md:mt-10">
                   <BookACall />
+                  <BtnDownloadResume />
                 </div>
 
                 <div className="gap-8 mt-20 justify-center flex-col md:flex-row hidden md:flex">

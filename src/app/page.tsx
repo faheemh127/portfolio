@@ -2,14 +2,14 @@ import Navbar from "@/components/sections/navbar/default";
 import FooterSection from "@/components/sections/footer/default";
 import HeroSection from "@/components/ui/hero-section";
 import TestimonialsSection from "@/components/ui/testimonials-section";
-import TruestedCompanies from "@/components/ui/truested-companies";
+import ClientCompanies from "@/components/ui/client-companies";
 
 export default function Home() {
   return (
     <>
       <Navbar />
       <HeroSection />
-      <TruestedCompanies />
+      <ClientCompanies />
       <TestimonialsSection />
       <FooterSection />
     </>
