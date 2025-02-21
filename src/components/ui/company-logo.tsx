@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { Progress } from "@/components/ui/progress";
 import { useState, useEffect } from "react";
+const ANIMATE_TIME = 5; // seconds
 interface CompanyLogoTypes {
   setCurrentAnimate: (number: number) => void;
   currentAnimate: number;
@@ -21,9 +22,12 @@ const CompanyLogo: React.FC<CompanyLogoTypes> = ({
 }) => {
   const [progress, setProgress] = useState(0); // Start from 0
 
+  const handleLogoClick = () => {
+    setCurrentAnimate(logoNumber);
+  };
+
   useEffect(() => {
     if (!(currentAnimate == logoNumber)) return;
-    console.log("useeffection function called" + currentAnimate);
     const interval = setInterval(() => {
       setProgress((prev) => {
         if (prev >= 100) {
@@ -32,14 +36,14 @@ const CompanyLogo: React.FC<CompanyLogoTypes> = ({
         }
         return prev + 1; // Increment progress by 1 each time
       });
-    }, 10); // 50ms interval => (100 steps * 50ms = 5000ms / 5s total)
+    }, (ANIMATE_TIME * 10)); // 50ms interval => (100 steps * 50ms = 5000ms / 5s total)
 
     return () => clearInterval(interval); // Cleanup interval on unmount
   }, [currentAnimate, logoNumber]);
 
   useEffect(() => {
     if (progress == 100) {
-      console.log("2nd useeffect called");
+      
       let n = logoNumber + 1;
       if (n > 5) n = 1;
       setCurrentAnimate(n);
@@ -47,9 +51,9 @@ const CompanyLogo: React.FC<CompanyLogoTypes> = ({
   }, [progress, logoNumber, setCurrentAnimate]);
 
   return (
-    <div className="w-[33vw] md:w-1/5 ">
+    <div className="w-[33vw] md:w-1/5 cursor-pointer" onClick={handleLogoClick}>
       <Image
-        className={`${className} m-auto ${
+        className={`${className} m-auto hover:grayscale-0 ${
           currentAnimate !== logoNumber ? "grayscale" : ""
         }`}
         src={`/img/logo/${src}`}

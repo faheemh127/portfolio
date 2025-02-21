@@ -7,7 +7,7 @@ import {
   NavbarRight,
   NavbarCenter,
 } from "../../ui/navbar";
-import { Sheet, SheetContent, SheetTrigger } from "../../ui/sheet";
+import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "../../ui/sheet";
 import { Menu } from "lucide-react";
 import LaunchUI from "../../logos/launch-ui";
 import Link from "next/link";
@@ -18,7 +18,7 @@ export default function Navbar() {
     const scroll = (e: Event) => {
       console.log("user is scrolling");
       console.log(e);
-      
+
       // if(headerRef.current && e.target !=null){
       //   if(e.target.documentElement.scrollTop > 100){
       //     headerRef.current.classList.add("header-bg");
@@ -67,30 +67,20 @@ export default function Navbar() {
                   </Button>
                 </SheetTrigger>
                 <SheetContent side="right">
-                  <nav className="grid gap-6 text-lg font-medium">
+                  <SheetTitle>
                     <Link
                       href="/"
                       className="flex items-center gap-2 text-xl font-bold"
                     >
                       <span>Launch UI</span>
                     </Link>
+                  </SheetTitle>
+                  <nav className="grid gap-6 text-lg font-medium mt-5">
                     <Link
                       href="/"
                       className="text-muted-foreground hover:text-foreground"
                     >
-                      Getting Started
-                    </Link>
-                    <Link
-                      href="/"
-                      className="text-muted-foreground hover:text-foreground"
-                    >
-                      Components
-                    </Link>
-                    <Link
-                      href="/"
-                      className="text-muted-foreground hover:text-foreground"
-                    >
-                      Documentation
+                      Linkedin
                     </Link>
                   </nav>
                 </SheetContent>

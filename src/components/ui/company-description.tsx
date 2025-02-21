@@ -67,7 +67,7 @@ function CompanyDescription({ currentAnimate }: { currentAnimate: number }) {
     companies.find((c) => c.id === currentAnimate) || companies[0];
 
   return (
-    <div className="flex justify-between items-center mt-[120px] px-10">
+    <div className="flex justify-between items-center mt-[5rem] md:mt-[5rem] px-2 md:px-10 flex-col md:flex-row gap-[5rem] md:gap-0">
       {/* Left Side - Logo & Stats */}
       <div className="__left">
         <motion.div
@@ -75,9 +75,9 @@ function CompanyDescription({ currentAnimate }: { currentAnimate: number }) {
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.5 }}
-          className="p-4 rounded-lg"
+          className="p-0 md:p-4 rounded-lg"
         >
-          <div className="flex flex-col gap-20">
+          <div className="flex flex-col gap-10 md:gap-20">
             <Image
               src={company.logo}
               className="w-[18rem]"
@@ -85,37 +85,39 @@ function CompanyDescription({ currentAnimate }: { currentAnimate: number }) {
               height={100}
               alt="Company Logo"
             />
-            {company.stats.map((stat, index) => (
-              <div key={index} className="__wrap">
-                <p className="text-5xl font-anton">{stat.value}</p>
-                <p className="text-xl">{stat.description}</p>
-              </div>
-            ))}
+            <div className=" flex flex-row md:flex-col md:gap-10">
+              {company.stats.map((stat, index) => (
+                <div key={index} className="__wrap">
+                  <p className="text-5xl font-anton">{stat.value}</p>
+                  <p className="text-xl">{stat.description}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </motion.div>
       </div>
 
       {/* Middle Bracket */}
-      <div className="__midle">
+      <div className="__midle hidden md:block">
         <code className="font-bold text-[18rem] text-stone-200">{`{`}</code>
       </div>
 
       {/* Right Side - Quote & Buttons */}
-      <div className="__right max-w-[55%]">
+      <div className="__right max-w-full md:max-w-[55%]">
         <motion.div
           key={currentAnimate}
           initial={{ opacity: 0, x: +100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.5 }}
-          className="p-4 rounded-lg"
+          className="p-0 md:p-4 rounded-lg"
         >
           <p className="mb-3">{company.category}</p>
           <h4 className="text-4xl mb-10">“{company.quote}”</h4>
           <div className="flex gap-3">
             <Button className="h-12 px-10 text-xl">Read Case Study</Button>
-            <Button variant="outline" className="h-12 px-10 text-xl">
+            {/* <Button variant="outline" className="h-12 px-10 text-xl">
               Learn More
-            </Button>
+            </Button> */}
           </div>
         </motion.div>
       </div>

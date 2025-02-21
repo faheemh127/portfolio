@@ -11,28 +11,40 @@ import {
   navigationMenuTriggerStyle,
 } from "./navigation-menu";
 
+import { ExternalLink } from "lucide-react";
 import Link from "next/link";
 
 export default function Navigation() {
+ 
   return (
     <NavigationMenu className="hidden md:flex">
       <NavigationMenuList>
         <NavigationMenuItem>
-          <Link href="/" legacyBehavior passHref>
+          {/* <Link href="/" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Portfolio
             </NavigationMenuLink>
-          </Link>
+          </Link> */}
 
-          <Link href="/" legacyBehavior passHref>
+          <Link
+            href="#client-companies"
+            legacyBehavior
+            passHref
+          >
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Happy Clients
             </NavigationMenuLink>
           </Link>
 
-          <Link href="/" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              LinkedIn
+          <Link
+            href="https://www.linkedin.com/in/muhammad-faheem-hassan-h127/"
+            legacyBehavior
+            passHref
+          >
+            <NavigationMenuLink
+              className={`${navigationMenuTriggerStyle()} flex items-center gap-1`}
+            >
+              LinkedIn <ExternalLink />
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
