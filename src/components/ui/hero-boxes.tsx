@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef, useEffect } from "react";
+import React, { useRef } from "react";
 
 interface HeroBoxesProps {
   children: React.ReactNode;
@@ -14,35 +14,10 @@ export const HeroBoxes: React.FC<HeroBoxesProps> = ({
   icon,
 }) => {
   const boxRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const boxElement = boxRef.current;
-
-    if (!boxElement) {
-      return;
-    }
-
-    const updateAnimation = () => {
-      const angle =
-        (parseFloat(boxElement.style.getPropertyValue("--angle")) + 0.5) % 360;
-      boxElement.style.setProperty("--angle", `${angle}deg`);
-      requestAnimationFrame(updateAnimation);
-    };
-
-    requestAnimationFrame(updateAnimation);
-  }, []);
-
+  
   return (
     <div
       ref={boxRef}
-      // style={
-      //   {
-      //     "--angle": "10deg",
-      //     "--border-color":
-      //       "linear-gradient(var(--angle),#6366F1,#1E293B)",
-      //     "--bg-color": "linear-gradient(#1E293B,#1E293B",
-      //   } as CSSProperties
-      // }
       className="flex h-[auto] w-full md:w-1/4 items-center justify-center rounded-lg p-3 [background:padding-box_var(--bg-color),border-box_var(--border-color)] py-4 bg-dark border border-[rgba(255,255,255,0.2)]"
       style={{
         backgroundColor: "rgb(79, 70, 229,0.3)",

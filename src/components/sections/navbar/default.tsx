@@ -9,30 +9,29 @@ import {
 } from "../../ui/navbar";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "../../ui/sheet";
 import { Menu } from "lucide-react";
-import LaunchUI from "../../logos/launch-ui";
+import { CodeXml } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useRef } from "react";
 export default function Navbar() {
-  const headerRef = useRef(null);
+
+  const headerRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
-    const scroll = (e: Event) => {
-      console.log("user is scrolling");
-      console.log(e);
-
-      // if(headerRef.current && e.target !=null){
-      //   if(e.target.documentElement.scrollTop > 100){
-      //     headerRef.current.classList.add("header-bg");
-      //   }else{
-      //     headerRef.current.classList.remove("header-bg");
-      //  }
-      // }
+    const handleScroll = () => {
+      if (headerRef.current) {
+        const scrollY = window.scrollY || document.documentElement.scrollTop;
+        if (scrollY > 100) {
+          headerRef.current.classList.add("header-bg");
+        } else {
+          headerRef.current.classList.remove("header-bg");
+        }
+      }
     };
-    window.addEventListener("scroll", scroll);
 
-    return () => {
-      window.removeEventListener("scroll", scroll);
-    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
   return (
     <div className="fixed w-full text-stone-200 z-50" ref={headerRef}>
       <header className="top-0 z-50 -mb-4 px-4 pb-4 max-w-7xl m-auto">
@@ -44,8 +43,8 @@ export default function Navbar() {
                 href="/"
                 className="flex items-center gap-2 text-xl font-bold"
               >
-                <LaunchUI />
-                Faheem
+                <CodeXml />
+                Faheem <span className="hidden md:block">Hassan</span>
               </Link>
             </NavbarLeft>
             <NavbarCenter>
@@ -72,7 +71,7 @@ export default function Navbar() {
                       href="/"
                       className="flex items-center gap-2 text-xl font-bold"
                     >
-                      <span>Launch UI</span>
+                      <span>Explore</span>
                     </Link>
                   </SheetTitle>
                   <nav className="grid gap-6 text-lg font-medium mt-5">

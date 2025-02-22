@@ -11,7 +11,7 @@ import { TextTypingEffectWithTextsFadeOut } from "@/components/ui/text-typing-ef
 export default function HeroSection() {
   return (
     <div className="bg-white min-h-screen h-auto overflow-x-hidden">
-      <div className=" h-full w-full bg-slate-950 min-h-screen">
+      <div className=" h-full w-full bg-stone-950 min-h-screen">
         <div className="h-full bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,rgba(79,79,79,0.10)_1px,transparent_1px),linear-gradient(to_bottom,rgba(79,79,79,0.10)_1px,transparent_1px)] bg-[size:40px_40px]">
           <div className="relative isolate px-6 pt-14 lg:px-8 ">
             <div

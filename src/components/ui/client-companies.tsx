@@ -6,7 +6,6 @@ import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 
 function ClientCompanies() {
   const [currentAnimate, setCurrentAnimate] = useState(1);
-  
   return (
     <div
       id="client-companies"

@@ -4,7 +4,8 @@ import {
   FooterBottom,
   FooterContent,
 } from "../../ui/footer";
-import LaunchUI from "../../logos/launch-ui";
+
+import { CodeXml } from "lucide-react";
 import Link from "next/link";
 export default function FooterSection() {
   return (
@@ -13,66 +14,61 @@ export default function FooterSection() {
         <Footer>
           <FooterContent>
             <FooterColumn className="col-span-2 sm:col-span-3 md:col-span-1">
-              <div className="flex items-center gap-2">
-                <LaunchUI />
-                <h3 className="text-xl font-bold">Muhammad Faheem Hassan</h3>
+              <div className="flex  gap-2 flex-col lg:px-5">
+                <h3 className="text-xl font-bold flex items-center gap-2">
+                  {" "}
+                  <CodeXml size={30} /> Muhammad Faheem Hassan
+                </h3>
+                <p className="text-slate-600">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est,
+                  magni aliquid voluptate accusantium ipsum odio error
+                  repudiandae
+                </p>
               </div>
             </FooterColumn>
+
             <FooterColumn>
-              <h3 className="text-md pt-1 font-semibold">Portfolio</h3>
-              <Link
-                href="/"
-                className="text-sm text-muted-foreground"
-              >
-                Changelog
+              <h3 className="text-md pt-1 font-semibold">
+                Legal & Professional Links
+              </h3>
+              <Link href="/privacy-policy" className="text-sm text-muted-foreground">
+                Privacy Policy
               </Link>
-              <Link
-                href="/"
-                className="text-sm text-muted-foreground"
-              >
-                Documentation
+              <Link href="/" className="text-sm text-muted-foreground">
+                Terms of Service
+              </Link>
+              <Link href="/" className="text-sm text-muted-foreground">
+                Client Reviews
+              </Link>
+              <Link href="/" className="text-sm text-muted-foreground">
+                Portfolio
               </Link>
             </FooterColumn>
             <FooterColumn>
-              <h3 className="text-md pt-1 font-semibold">Clients</h3>
+              <h3 className="text-md pt-1 font-semibold">
+                Social Media & Profiles
+              </h3>
               <Link
-                href="/"
+                target="_blank"
+                href="https://www.linkedin.com/in/muhammad-faheem-hassan-h127/"
                 className="text-sm text-muted-foreground"
               >
-                About
+                LinkedIn
               </Link>
               <Link
-                href="/"
+                target="_blank"
+                href="https://github.com/faheemh127"
                 className="text-sm text-muted-foreground"
               >
-                Careers
+                GitHub
               </Link>
+
               <Link
-                href="/"
+                target="_blank"
+                href="https://www.youtube.com/@faheemh127"
                 className="text-sm text-muted-foreground"
               >
-                Blog
-              </Link>
-            </FooterColumn>
-            <FooterColumn>
-              <h3 className="text-md pt-1 font-semibold">Contact</h3>
-              <Link
-                href="/"
-                className="text-sm text-muted-foreground"
-              >
-                Discord
-              </Link>
-              <Link
-                href="/"
-                className="text-sm text-muted-foreground"
-              >
-                Twitter
-              </Link>
-              <Link
-                href="/"
-                className="text-sm text-muted-foreground"
-              >
-                Github
+                Youtube
               </Link>
             </FooterColumn>
           </FooterContent>
@@ -81,7 +77,6 @@ export default function FooterSection() {
             <div className="flex items-center gap-4">
               <Link href="/">Privacy Policy</Link>
               <Link href="/">Terms of Service</Link>
-              
             </div>
           </FooterBottom>
         </Footer>

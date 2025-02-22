@@ -7,7 +7,7 @@ const Footer = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn("bg-background pb-4 pt-12 text-foreground", className)}
+    className={cn("bg-background pb-6 pt-16 text-foreground max-w-7xl mx-auto", className)}
     {...props}
   />
 ));
@@ -20,12 +20,13 @@ const FooterContent = React.forwardRef<
   <div
     ref={ref}
     className={cn(
-      "grid grid-cols-2 gap-8 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5",
-      className,
+      "grid grid-cols-2 gap-8 sm:grid-cols-3 md:grid-cols-3",
+      className
     )}
     {...props}
   />
 ));
+
 FooterContent.displayName = "FooterContent";
 
 const FooterColumn = React.forwardRef<
@@ -44,7 +45,7 @@ const FooterBottom = React.forwardRef<
     ref={ref}
     className={cn(
       "mt-8 flex flex-col items-center justify-between gap-4 border-t pt-4 text-xs text-muted-foreground sm:flex-row",
-      className,
+      className
     )}
     {...props}
   />
