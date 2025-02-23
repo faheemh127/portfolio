@@ -33,7 +33,7 @@ export default function HeroSection() {
                 <div className="relative">
                   <div className="absolute left-1/2 top-0 z-[-1] h-[80vh] w-20 -translate-x-1/2 -translate-y-32 rotate-45 bg-indigo-500 blur-[180px]"></div>
 
-                  <h1 className="text-5xl font-semibold tracking-tight text-balance text-stone-200 sm:text-8xl tracking-wide uppercase font-anton">
+                  <h1 className="text-[3.5rem] leading-none font-semibold tracking-tight text-balance text-stone-200 sm:text-8xl tracking-wide uppercase font-anton">
                     I Make Top-Notch
                     <br />
                     <span className="text-indigo-600">

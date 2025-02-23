@@ -1,52 +1,63 @@
 import React from "react";
 import Image from "next/image";
-import { Button } from "./button";
+import Link from "next/link";
 import { motion } from "framer-motion";
-
+import { Button } from "./button";
 const companies = [
   {
     id: 1,
     logo: "/img/logo/aounsol-logo.svg",
     stats: [
-      { value: "30%", description: "reduction in operating costs" },
-      { value: "18k+", description: "global customers" },
+      { value: "$200K+", description: "Company's Revenew" },
+      { value: "20+", description: "global clients get service" },
     ],
     quote:
-      "Atlas Vector Search was the solution to our problems. It simplifies a lot of the work that goes into making Okta Inbox super user friendly for customers.",
-    category: "Software",
+      "I joined this company in 2023 and have since contributed to numerous projects, primarily focusing on developing custom WordPress plugins and tailored solutions for our clients. Through my expertise, I have helped clients maximize the potential of their existing assets, enabling them to generate thousands of dollars in revenue.",
+    category: "Software House",
+    website: "https://aounsolutions.com/",
+    link_text: "Visit Company's Website",
   },
   {
     id: 2,
     logo: "/img/logo/ar-webcrafts.png",
     stats: [
-      { value: "50%", description: "increase in revenue" },
-      { value: "25k+", description: "satisfied clients" },
+      { value: "150+", description: "bug fixes and UI issues fixed" },
+      {
+        value: "200+",
+        description: "Organizations world wide using the product",
+      },
     ],
     quote:
-      "Our AI-powered solution transformed how businesses analyze customer data, making decision-making 40% faster.",
-    category: "Artificial Intelligence",
+      "Ar Webcrafts primarily works on the WebinarIgnition WordPress plugin. I joined this company in 2024 and have been helping them build their WordPress plugin, WebinarIgnition. I fix bugs, ensure the plugin complies with WP.org policies, and improve its UI.",
+    category: "SAAS",
+    website: "https://www.arwebcrafts.com/",
+    link_text: "Visit Site",
   },
   {
     id: 3,
     logo: "/img/logo/lime-technologies.png.webp",
     stats: [
-      { value: "50%", description: "increase in revenue" },
-      { value: "25k+", description: "satisfied clients" },
+      { value: "50%+", description: "CRM Software Development" },
+      { value: "$300K+", description: "Managed transactions through CRM" },
     ],
     quote:
-      "Our AI-powered solution transformed how businesses analyze customer data, making decision-making 40% faster.",
-    category: "Artificial Intelligence",
+      "From 2020 to 2021, I built a custom CRM for this company, which now manages their teams, business finances, assets, bank accounts, cashbooks, and other financial aspects. Previously, they relied on Excel, but now they have a tailored CRM designed to meet their specific business needs.",
+    category: "Digital Marketing",
+    website: "https://limetechnologies.net/",
+    link_text: "Visit Site",
   },
   {
     id: 4,
     logo: "/img/logo/cancerscan-uk.webp",
     stats: [
-      { value: "50%", description: "increase in revenue" },
-      { value: "25k+", description: "satisfied clients" },
+      { value: "50%", description: "Easy test booking" },
+      { value: "$25k+", description: "Earned from clients" },
     ],
     quote:
-      "Our AI-powered solution transformed how businesses analyze customer data, making decision-making 40% faster.",
-    category: "Artificial Intelligence",
+      "We built an online test booking system for this UK-based company, allowing patients to answer important questions before arriving at the test center and make online payments through their website.",
+    category: "Health Care",
+    website: "https://cancerscanuk.co.uk/",
+    link_text: "Visit Site",
   },
   {
     id: 5,
@@ -56,8 +67,10 @@ const companies = [
       { value: "25k+", description: "satisfied clients" },
     ],
     quote:
-      "Our AI-powered solution transformed how businesses analyze customer data, making decision-making 40% faster.",
+      "I help this company build custom UIs for their website based on the exact Figma designs provided by their clients. Since these designs required custom functionality, using Elementor was not an option. Instead, we developed tailored functionalities to match the Figma UIs seamlessly.",
     category: "Artificial Intelligence",
+    website: "https://gladstonemedia.ca/",
+    link_text: "Visit Site",
   },
 ];
 
@@ -67,7 +80,7 @@ function CompanyDescription({ currentAnimate }: { currentAnimate: number }) {
     companies.find((c) => c.id === currentAnimate) || companies[0];
 
   return (
-    <div className="flex justify-between items-center mt-[5rem] md:mt-[5rem] px-2 md:px-10 flex-col md:flex-row gap-[5rem] md:gap-0">
+    <div className="flex justify-between items-center mt-[5rem] md:mt-[5rem] md:px-10 flex-col md:flex-row gap-[5rem] md:gap-0">
       {/* Left Side - Logo & Stats */}
       <div className="__left">
         <motion.div
@@ -85,10 +98,10 @@ function CompanyDescription({ currentAnimate }: { currentAnimate: number }) {
               height={100}
               alt="Company Logo"
             />
-            <div className=" flex flex-row md:flex-col md:gap-10">
+            <div className=" flex flex-row justify-between md:flex-col md:gap-10">
               {company.stats.map((stat, index) => (
                 <div key={index} className="__wrap">
-                  <p className="text-5xl font-anton">{stat.value}</p>
+                  <p className="text-4xl md:text-6xl font-anton">{stat.value}</p>
                   <p className="text-xl">{stat.description}</p>
                 </div>
               ))}
@@ -112,9 +125,15 @@ function CompanyDescription({ currentAnimate }: { currentAnimate: number }) {
           className="p-0 md:p-4 rounded-lg"
         >
           <p className="mb-3">{company.category}</p>
-          <h4 className="text-4xl mb-10">“{company.quote}”</h4>
+          <h4 className="text-3xl md:text-4xl mb-10">“{company.quote}”</h4>
           <div className="flex gap-3">
-            <Button className="h-12 px-10 text-xl">Read Case Study</Button>
+            <Link
+              href={company.website}
+              target="_blank"
+            
+            >
+              <Button className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-xl font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 text-primary-foreground shadow hover:from-primary/80 hover:to-primary/70 from-primary/90 to-primary/80 border-t-primary h-9 px-8 py-6 bg-indigo-600">{company.link_text}</Button>
+            </Link>
             {/* <Button variant="outline" className="h-12 px-10 text-xl">
               Learn More
             </Button> */}

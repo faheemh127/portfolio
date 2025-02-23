@@ -1,45 +1,21 @@
 "use client";
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState } from "react";
 import CompanyLogo from "./company-logo";
 import CompanyDescription from "./company-description";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 
 function ClientCompanies() {
-  const [isVisible, setIsVisible] = useState(false);
   const [currentAnimate, setCurrentAnimate] = useState(1);
-  const ref = useRef(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.disconnect(); // Stop observing once visible
-        }
-      },
-      { threshold: 0.1 }
-    );
-
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
-
-    return () => observer.disconnect();
-  }, []);
-
-  if (!isVisible) return <div ref={ref} className="h-[500px]" />; // Placeholder until visible
-
   return (
     <div
       id="client-companies"
-      ref={ref}
       className="px-5 h-full bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,rgba(79,79,79,0.09)_1px,transparent_1px),linear-gradient(to_bottom,rgba(79,79,79,0.09)_1px,transparent_1px)] bg-[size:40px_40px] w-full overflow-hidden"
     >
-      <div className="py-[80px] md:py-[150px] w-full max-w-[1400px] m-auto">
-        <div className="flex justify-between items-center mb-10 md:mb-16">
+      <div className="py-[100px] md:py-[150px] w-full max-w-[1400px] m-auto">
+        <div className="flex justify-between items-center mb-16">
           <h1 className="text-4xl md:text-5xl leading-1 md:leading-[3.5rem] font-anton max-w-[600px]">
             Loved by Peoples, trusted by{" "}
-            <span className="text-indigo-600"> companies worldwide </span>
+            <span className="text-indigo-600"> companies world wide </span>
           </h1>
           <p className="hidden">View all customer stories</p>
         </div>
@@ -62,6 +38,14 @@ function ClientCompanies() {
               alt="Alternative"
               logoNumber={2}
             />
+            {/* <CompanyLogo
+          setCurrentAnimate={setCurrentAnimate}
+          currentAnimate={currentAnimate}
+          src="finegap.png"
+          className="w-[3.7rem] h-[3.5rem]"
+          alt="Alternative"
+          logoNumber={3}
+        /> */}
             <CompanyLogo
               setCurrentAnimate={setCurrentAnimate}
               currentAnimate={currentAnimate}

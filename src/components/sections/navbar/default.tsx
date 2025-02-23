@@ -7,14 +7,20 @@ import {
   NavbarRight,
   NavbarCenter,
 } from "../../ui/navbar";
-import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "../../ui/sheet";
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+  SheetTitle,
+} from "../../ui/sheet";
 import { Menu } from "lucide-react";
 import { CodeXml } from "lucide-react";
 import Link from "next/link";
-import { useEffect, useRef } from "react";
-export default function Navbar() {
+import { useEffect, useRef, useState } from "react";
 
+export default function Navbar() {
   const headerRef = useRef<HTMLDivElement>(null);
+  const [isSheetOpen, setIsSheetOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -54,12 +60,14 @@ export default function Navbar() {
               <Button variant="default" className=" bg-indigo-600" asChild>
                 <Link href="/">Contact Me</Link>
               </Button>
-              <Sheet>
+              {/* Controlled Sheet */}
+              <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
                 <SheetTrigger asChild>
                   <Button
                     variant="ghost"
                     size="icon"
                     className="shrink-0 md:hidden"
+                    onClick={() => setIsSheetOpen(true)}
                   >
                     <Menu className="h-5 w-5" />
                     <span className="sr-only">Toggle navigation menu</span>
@@ -78,8 +86,23 @@ export default function Navbar() {
                     <Link
                       href="/"
                       className="text-muted-foreground hover:text-foreground"
+                      onClick={() => setIsSheetOpen(false)} // Close on click
                     >
                       Linkedin
+                    </Link>
+                    <Link
+                      href="#client-companies"
+                      className="text-muted-foreground hover:text-foreground"
+                      onClick={() => setIsSheetOpen(false)} // Close on click
+                    >
+                      Trusted Clients
+                    </Link>
+                    <Link
+                      href="#testimonies"
+                      className="text-muted-foreground hover:text-foreground"
+                      onClick={() => setIsSheetOpen(false)} // Close on click
+                    >
+                      Testimonials
                     </Link>
                   </nav>
                 </SheetContent>

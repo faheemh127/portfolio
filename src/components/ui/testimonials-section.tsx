@@ -112,17 +112,17 @@ const testimonials = [
 function TestimonialsSection() {
   return (
     <section id="testimonies" className="py-20 bg-slate-900">
-      <div className="max-w-6xl mx-8 md:mx-10 lg:mx-20 xl:mx-auto">
+      <div className="max-w-7xl mx-8 md:mx-10 lg:mx-20 xl:mx-auto">
         <div className="transition duration-500 ease-in-out transform scale-100 translate-x-0 translate-y-0 opacity-100">
           <div className="mb-12 space-y-5 md:mb-16 md:text-center">
             <div className="inline-block px-3 py-1 text-sm font-semibold text-indigo-100 rounded-lg md:text-center text-cn bg-[#202c47] bg-opacity-60 hover:cursor-pointer hover:bg-opacity-40">
               Words from Others
             </div>
             <h1 className="text-indigo-600 mb-5 text-3xl font-semibold md:text-center md:text-5xl font-anton ">
-              It&apos;s not just us.
+              It&apos;s not just me.
             </h1>
             <p className="text-xl text-stone-200 md:text-center md:text-2xl">
-              Here&apos;s what others have to say about us.
+              Here&apos;s what others have to say about my services.
             </p>
           </div>
         </div>

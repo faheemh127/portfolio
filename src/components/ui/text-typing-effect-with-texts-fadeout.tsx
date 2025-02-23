@@ -35,7 +35,7 @@ const texts = [
   "High-performance React.js and Next.js web apps, crafted with precision and passion.",
   "I've worked with 20+ companies, helping them scale and increase their revenue.",
   "Started my web development journey in 2017 since then i have worked on dozens of web apps",
-  "We can also use this effect to create a typing effect for our resume",
+  "I'm Helping companies build websites, custom web solutions, and SaaS platforms.",
   "or for your blog",
   "or for your landing page",
   "let's go",
