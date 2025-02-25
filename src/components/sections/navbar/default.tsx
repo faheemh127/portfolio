@@ -59,6 +59,7 @@ export default function Navbar() {
             <NavbarRight>
               <Button variant="default" className=" bg-indigo-600" asChild>
                 <Link href="/">Contact Me</Link>
+                {/* <a className="group/button flex w-fit items-center justify-center gap-x-2 font-bricolage bg-background h-9 rounded-md px-4 text-sm/[14px] font-semibold sm:text-[15px]/[15px] md:h-10 md:px-5 duration-200 shadow-[inset_0_2px_2px_rgba(221,221,221,0.5),inset_0_-2px_#13ae72,_0_0_0_4px_rgba(221,221,221,0.05)] hover:shadow-[inset_0_2px_2px_rgba(221,221,221,0.5),inset_0_-2px_#13ae72,_0_0_0_4px_rgba(221,221,221,0.05),0_0_5px_#10b981,inset_0_0_5px_#10b981] !gap-x-0 flex items-center gap-x-3" href="/contact">Get in touch<div></div></a> */}
               </Button>
               {/* Controlled Sheet */}
               <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
