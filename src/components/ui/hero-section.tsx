@@ -12,7 +12,7 @@ export default function HeroSection() {
   return (
     <div className="bg-white min-h-screen h-auto overflow-x-hidden">
       <div className=" h-full w-full bg-stone-950 min-h-screen">
-        <div className="h-full bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,rgba(79,79,79,0.10)_1px,transparent_1px),linear-gradient(to_bottom,rgba(79,79,79,0.10)_1px,transparent_1px)] bg-[size:40px_40px]">
+        <div className="h-full bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,rgba(79,79,79,0.15)_1px,transparent_1px),linear-gradient(to_bottom,rgba(79,79,79,0.15)_1px,transparent_1px)] bg-[size:35px_35px]">
           <div className="relative isolate px-6 pt-14 lg:px-8 ">
             <div
               aria-hidden="true"
@@ -33,7 +33,7 @@ export default function HeroSection() {
                 <div className="relative">
                   <div className="absolute left-1/2 top-0 z-[-1] h-[80vh] w-20 -translate-x-1/2 -translate-y-32 rotate-45 bg-indigo-500 blur-[180px]"></div>
 
-                  <h1 className="text-[3.5rem] leading-none font-semibold tracking-tight text-balance text-stone-200 sm:text-8xl tracking-wide uppercase font-anton">
+                  <h1 className="text-[3.5rem] leading-none font-semibold tracking-tight text-balance text-stone-200 sm:text-[7rem] tracking-wide uppercase font-anton">
                     I Make Top-Notch
                     <br />
                     <span className="text-indigo-600">

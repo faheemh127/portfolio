@@ -4,11 +4,13 @@ import HeroSection from "@/components/ui/hero-section";
 import TestimonialsSection from "@/components/ui/testimonials-section";
 import ClientCompanies from "@/components/ui/client-companies";
 import SplashCursor from "../components/ui/SplashCursor";
+import WebDesignSection from "@/components/ui/web-design-section";
 export default function Home() {
   return (
     <>
       <Navbar />
       <HeroSection />
+      <WebDesignSection />
       <ClientCompanies />
       <TestimonialsSection />
       <FooterSection />

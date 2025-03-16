@@ -6,7 +6,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -80,13 +79,16 @@ body {
     --chart-5: 340 75% 55%;
   }
 }
+
+
+
 .header-bg {
   background-color: rgba(79, 70, 229, 0.7);
-  
+
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(13px);
   -webkit-backdrop-filter: blur(13px);
-  transition: 0.3s ease-in-out
+  transition: 0.3s ease-in-out;
 }
 
 @layer base {
@@ -96,4 +98,36 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.shiny-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  height: 400px;
+  width: 400px;
+  border: 3px solid #0000;
+  border-radius: 12px;
+  background: linear-gradient(#131219, #131219) padding-box,
+    linear-gradient(var(--angle), #070707, #687aff) border-box;
+  /* animation: 8s rotate linear infinite; */
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@property --border-angle {
+  inherits: false;
+  initial-value: 0deg;
+  syntax: '<angle>';
 }

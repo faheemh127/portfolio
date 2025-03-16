@@ -10,11 +10,16 @@ export default {
   theme: {
     extend: {
       animation: {
+        border: "border 4s linear infinite",
         flip: "flip 6s infinite steps(2, end)",
         rotate: "rotate 3s linear infinite both",
         "loog-scroll": "loop-scroll 50s linear infinite",
       },
       keyframes: {
+        border: {
+          "0%": { "--border-angle": '0deg' },
+          "100%": { "--border-angle": '360deg' }
+        },
         "loop-scroll": {
           from: {
             transform: "translateX(0)",
