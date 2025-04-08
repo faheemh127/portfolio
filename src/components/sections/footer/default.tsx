@@ -38,7 +38,7 @@ export default function FooterSection() {
               >
                 Privacy Policy
               </Link>
-              <Link href="/" className="text-sm text-muted-foreground">
+              <Link href="/terms-of-service" className="text-sm text-muted-foreground">
                 Terms of Service
               </Link>
               <Link

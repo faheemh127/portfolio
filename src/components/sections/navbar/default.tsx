@@ -17,6 +17,7 @@ import { Menu } from "lucide-react";
 import { CodeXml } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
+import PrimaryBtn from "@/components/ui/primary-btn";
 
 export default function Navbar() {
   const headerRef = useRef<HTMLDivElement>(null);
@@ -43,7 +44,7 @@ export default function Navbar() {
       <header className="top-0 z-50 -mb-4 px-4 pb-4 max-w-7xl m-auto">
         <div className="fade-bottom absolute left-0 h-24 w-full"></div>
         <div className="relative mx-auto max-w-container">
-          <NavbarComponent>
+          <NavbarComponent className="py-3">
             <NavbarLeft>
               <Link
                 href="/"
@@ -58,8 +59,9 @@ export default function Navbar() {
             </NavbarCenter>
             <NavbarRight>
               <Button variant="default" className=" bg-indigo-600" asChild>
-                <Link href="/">Contact Me</Link>
-                {/* <a className="group/button flex w-fit items-center justify-center gap-x-2 font-bricolage bg-background h-9 rounded-md px-4 text-sm/[14px] font-semibold sm:text-[15px]/[15px] md:h-10 md:px-5 duration-200 shadow-[inset_0_2px_2px_rgba(221,221,221,0.5),inset_0_-2px_#13ae72,_0_0_0_4px_rgba(221,221,221,0.05)] hover:shadow-[inset_0_2px_2px_rgba(221,221,221,0.5),inset_0_-2px_#13ae72,_0_0_0_4px_rgba(221,221,221,0.05),0_0_5px_#10b981,inset_0_0_5px_#10b981] !gap-x-0 flex items-center gap-x-3" href="/contact">Get in touch<div></div></a> */}
+                <PrimaryBtn />
+                {/* <Link className="1p-px bg-gradient-to-t from-violet-600 via-violet-600 to-indigo-600" href="/">Contact Me</Link> */}
+                {/* <Link className="group/button flex w-fit items-center justify-center gap-x-2 font-bricolage bg-background h-9 rounded-md px-4 text-sm/[14px] font-semibold sm:text-[15px]/[15px] md:h-10 md:px-5 duration-200 shadow-[inset_0_2px_2px_rgba(221,221,221,0.5),inset_0_-2px_#13ae72,_0_0_0_4px_rgba(221,221,221,0.05)] hover:shadow-[inset_0_2px_2px_rgba(221,221,221,0.5),inset_0_-2px_#13ae72,_0_0_0_4px_rgba(221,221,221,0.05),0_0_5px_#10b981,inset_0_0_5px_#10b981] !gap-x-0 flex items-center gap-x-3" href="/contact">Get in touch<div></div></Link> */}
               </Button>
               {/* Controlled Sheet */}
               <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>

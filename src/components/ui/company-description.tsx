@@ -80,7 +80,7 @@ function CompanyDescription({ currentAnimate }: { currentAnimate: number }) {
     companies.find((c) => c.id === currentAnimate) || companies[0];
 
   return (
-    <div className="flex justify-between items-center mt-[5rem] md:mt-[5rem] md:px-10 flex-col md:flex-row gap-[5rem] md:gap-0">
+    <div className="flex justify-between items-left md:items-center mt-[5rem] md:mt-[5rem] md:px-10 flex-col md:flex-row gap-[2rem] md:gap-[5rem] md:gap-0">
       {/* Left Side - Logo & Stats */}
       <div className="__left">
         <motion.div
@@ -93,7 +93,7 @@ function CompanyDescription({ currentAnimate }: { currentAnimate: number }) {
           <div className="flex flex-col gap-10 md:gap-20">
             <Image
               src={company.logo}
-              className="w-[18rem]"
+              className="w-[12rem] md:w-[18rem]"
               width={400}
               height={100}
               alt="Company Logo"
@@ -101,8 +101,10 @@ function CompanyDescription({ currentAnimate }: { currentAnimate: number }) {
             <div className=" flex flex-row justify-between md:flex-col md:gap-10">
               {company.stats.map((stat, index) => (
                 <div key={index} className="__wrap">
-                  <p className="text-4xl md:text-6xl font-anton">{stat.value}</p>
-                  <p className="text-xl">{stat.description}</p>
+                  <p className="text-4xl md:text-5xl font-anton text-gray-800 tracking-[3px]">
+                    {stat.value}
+                  </p>
+                  <p className="text-xl font-mono max-w-[150px] text-stone-500">{stat.description}</p>
                 </div>
               ))}
             </div>
@@ -124,15 +126,13 @@ function CompanyDescription({ currentAnimate }: { currentAnimate: number }) {
           transition={{ duration: 1.5 }}
           className="p-0 md:p-4 rounded-lg"
         >
-          <p className="mb-3">{company.category}</p>
-          <h4 className="text-3xl md:text-4xl mb-10">“{company.quote}”</h4>
+          <p className="mb-3 text-indigo-600">{company.category}</p>
+          <h4 className="text-xl md:text-3xl mb-10 font-mono text-gray-600">“{company.quote}”</h4>
           <div className="flex gap-3">
-            <Link
-              href={company.website}
-              target="_blank"
-            
-            >
-              <Button className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-xl font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 text-primary-foreground shadow hover:from-primary/80 hover:to-primary/70 from-primary/90 to-primary/80 border-t-primary h-9 px-8 py-6 bg-indigo-600">{company.link_text}</Button>
+            <Link href={company.website} target="_blank">
+              <Button className="inline-flex items-center justify-center whitespace-nowrap rounded-sm text-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 text-primary-foreground shadow hover:from-primary/80 hover:to-primary/70 from-primary/90 to-primary/80 border-t-primary px-7 py-5 bg-indigo-600">
+                {company.link_text}
+              </Button>
             </Link>
             {/* <Button variant="outline" className="h-12 px-10 text-xl">
               Learn More

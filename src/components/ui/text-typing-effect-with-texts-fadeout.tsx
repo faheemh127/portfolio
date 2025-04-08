@@ -36,9 +36,9 @@ const texts = [
   "I've worked with 20+ companies, helping them scale and increase their revenue.",
   "Started my web development journey in 2017 since then i have worked on dozens of web apps",
   "I'm Helping companies build websites, custom web solutions, and SaaS platforms.",
-  "or for your blog",
-  "or for your landing page",
-  "let's go",
+  "I create landing pages that can generate massive sales",
+  "I help companies and peoples for branding through their website",
+  "I have 6 months of experience in working with a startup.",
 ];
 export const TextTypingEffectWithTextsFadeOut = () => {
   const [textIndex, setTextIndex] = useState(0);

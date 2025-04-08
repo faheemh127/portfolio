@@ -6,108 +6,110 @@ const testimonials = [
   [
     {
       id: 1,
-      image:
-        "https://pbs.twimg.com/profile_images/1276461929934942210/cqNhNk6v_400x400.jpg",
-      name: "Kanye West",
-      role: "Rapper & Entrepreneur",
-      text: "Find God.",
+      image: "/img/testimonials/noman-ghaffar.png",
+      name: "Noman Ghaffar",
+      role: "CEO of Finegap",
+      text: "Working with Muhammad Faheem Hassan has been an absolute pleasure! They developed a high-quality, fully optimized website for FineGap, exceeding our expectations. Their expertise in WordPress, custom plugins, and responsive design made a huge difference. We highly recommend their services to anyone looking for a top-notch web development partner!",
+      link: "https://finegap.com/",
     },
     {
       id: 2,
-      image:
-        "https://pbs.twimg.com/profile_images/1535420431766671360/Pwq-1eJc_400x400.jpg",
-      name: "Tim Cook",
-      role: "CEO of Apple",
-      text: "Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare. Donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum.",
+      image: "/img/testimonials/noman-ghaffar.png",
+      name: "Ayesha Khan",
+      role: "Marketing Manager",
+      text: "Muhammad Faheem Hassan delivered an outstanding website for our company. The design was sleek, and the performance was top-notch. Highly recommended!",
+      link: "https://finegap.com/",
     },
     {
       id: 3,
-      image:
-        "https://pbs.twimg.com/profile_images/1276461929934942210/cqNhNk6v_400x400.jpg",
-      name: "Kanye West",
-      role: "Rapper & Entrepreneur",
-      text: "Find God.",
+      image: "/img/testimonials/noman-ghaffar.png",
+      name: "Ali Raza",
+      role: "Founder of TechX",
+      text: "The level of professionalism and expertise displayed in web development was impressive. Our website was built exactly to our requirements!",
+      link: "https://finegap.com/",
     },
     {
       id: 4,
-      image:
-        "https://pbs.twimg.com/profile_images/1535420431766671360/Pwq-1eJc_400x400.jpg",
-      name: "Tim Cook",
-      role: "CEO of Apple",
-      text: "Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare. Donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum.",
+      image: "/img/testimonials/noman-ghaffar.png",
+      name: "Sarah Ahmed",
+      role: "Product Manager",
+      text: "Amazing work! The attention to detail and smooth functionality of our website have significantly improved user engagement. Thank you!",
+      link: "https://finegap.com/",
     },
   ],
   // Column 2
   [
     {
       id: 5,
-      image:
-        "https://pbs.twimg.com/profile_images/1535420431766671360/Pwq-1eJc_400x400.jpg",
-      name: "Parag Agrawal",
-      role: "CEO of Twitter",
-      text: "Enim neque volutpat ac tincidunt vitae semper. Mattis aliquam faucibus purus in massa tempor. Neque vitae tempus quam pellentesque nec. Turpis cursus in hac habitasse platea dictumst.",
+      image: "/img/testimonials/noman-ghaffar.png",
+      name: "Hassan Tariq",
+      role: "CTO at InnovateHub",
+      text: "Incredible service! The website was delivered on time and exceeded all expectations in terms of design and functionality.",
+      link: "https://finegap.com/",
     },
     {
       id: 6,
-      image:
-        "https://pbs.twimg.com/profile_images/1535420431766671360/Pwq-1eJc_400x400.jpg",
-      name: "Tim Cook",
-      role: "CEO of Apple",
-      text: "Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare. Donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum.",
+      image: "/img/testimonials/noman-ghaffar.png",
+      name: "Maria Siddiqui",
+      role: "UI/UX Designer",
+      text: "The creativity and technical expertise in the development of our platform were phenomenal. We received great feedback from users!",
+      link: "https://finegap.com/",
     },
     {
       id: 7,
-      image:
-        "https://pbs.twimg.com/profile_images/1375285353146327052/y6jeByyD_400x400.jpg",
-      name: "Parag Agrawal",
-      role: "CEO of Twitter",
-      text: "Enim neque volutpat ac tincidunt vitae semper. Mattis aliquam faucibus purus in massa tempor. Neque vitae tempus quam pellentesque nec. Turpis cursus in hac habitasse platea dictumst.",
+      image: "/img/testimonials/noman-ghaffar.png",
+      name: "Usman Farooq",
+      role: "Business Analyst",
+      text: "A seamless experience from start to finish. The team was very professional and handled every request with great care.",
+      link: "https://finegap.com/",
     },
     {
       id: 8,
-      image:
-        "https://pbs.twimg.com/profile_images/1535420431766671360/Pwq-1eJc_400x400.jpg",
-      name: "Tim Cook",
-      role: "CEO of Apple",
-      text: "Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare. Donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum.",
+      image: "/img/testimonials/noman-ghaffar.png",
+      name: "Fatima Shah",
+      role: "E-commerce Manager",
+      text: "The website not only looks great but also performs exceptionally well. It has greatly boosted our online presence!",
+      link: "https://finegap.com/",
     },
   ],
   // Column 3
   [
     {
       id: 9,
-      image:
-        "https://pbs.twimg.com/profile_images/1221837516816306177/_Ld4un5A_400x400.jpg",
-      name: "Satya Nadella",
-      role: "CEO of Microsoft",
-      text: "Tortor dignissim convallis aenean et tortor at. At ultrices mi tempus imperdiet nulla malesuada. Id cursus metus aliquam eleifend mi. Quis ipsum suspendisse ultrices gravida dictum fusce ut.",
+      image: "/img/testimonials/noman-ghaffar.png",
+      name: "Rizwan Malik",
+      role: "Software Engineer",
+      text: "Highly professional and efficient. Our website was built with clean code and excellent design!",
+      link: "https://finegap.com/",
     },
     {
       id: 10,
-      image:
-        "https://pbs.twimg.com/profile_images/1221837516816306177/_Ld4un5A_400x400.jpg",
-      name: "Dan Schulman",
-      role: "CEO of PayPal",
-      text: "Quam pellentesque nec nam aliquam sem et tortor consequat id. Enim sit amet venenatis urna cursus.",
+      image: "/img/testimonials/noman-ghaffar.png",
+      name: "Zara Mehmood",
+      role: "Digital Marketer",
+      text: "Our website now runs smoothly and loads quickly. The development team did an exceptional job!",
+      link: "https://finegap.com/",
     },
     {
       id: 11,
-      image:
-        "https://pbs.twimg.com/profile_images/1221837516816306177/_Ld4un5A_400x400.jpg",
-      name: "Satya Nadella",
-      role: "CEO of Microsoft",
-      text: "Tortor dignissim convallis aenean et tortor at. At ultrices mi tempus imperdiet nulla malesuada. Id cursus metus aliquam eleifend mi. Quis ipsum suspendisse ultrices gravida dictum fusce ut.",
+      image: "/img/testimonials/noman-ghaffar.png",
+      name: "Bilal Ahmed",
+      role: "Project Coordinator",
+      text: "Fantastic collaboration! The website's responsiveness and usability have greatly improved our customer engagement.",
+      link: "https://finegap.com/",
     },
     {
       id: 12,
-      image:
-        "https://pbs.twimg.com/profile_images/516916920482672641/3jCeLgFb_400x400.jpeg",
-      name: "Dan Schulman",
-      role: "CEO of PayPal",
-      text: "Quam pellentesque nec nam aliquam sem et tortor consequat id. Enim sit amet venenatis urna cursus.",
+      image: "/img/testimonials/noman-ghaffar.png",
+      name: "Mehwish Tariq",
+      role: "Freelance Consultant",
+      text: "One of the best web development experiences we've had. The team understood our requirements perfectly!",
+      link: "https://finegap.com/",
     },
   ],
 ];
+
+
 
 function TestimonialsSection() {
   return (
@@ -140,10 +142,13 @@ function TestimonialsSection() {
               }
             >
               {column.map((testimonial) => (
-                <li key={testimonial.id} className="text-sm leading-6">
+                <li
+                  key={testimonial.id}
+                  className="text-sm leading-6  group  group-hover:blur-sm hover:blur-none"
+                >
                   <div className="relative group">
                     <div className="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200"></div>
-                    <a href="#" className="cursor-pointer">
+                    <a href={testimonial.link} className="cursor-pointer">
                       <div className="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
                         <div className="flex items-center space-x-4">
                           <Image
@@ -152,6 +157,7 @@ function TestimonialsSection() {
                             alt={testimonial.name}
                             width={12}
                             height={12}
+                            unoptimized
                           />
                           <div>
                             <h3 className="text-lg font-semibold text-white">

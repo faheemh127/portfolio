@@ -10,10 +10,10 @@ const getEnvVariable = (key: string, fallback = ""): string => {
 };
 
 export const config = {
-  siteName: getEnvVariable("NEXT_PUBLIC_SITE_NAME", "Default Site"),
-  siteUrl: getEnvVariable("NEXT_PUBLIC_SITE_URL", "https://default.com"),
+  siteName: getEnvVariable("NEXT_PUBLIC_SITE_NAME", "Faheem Hassan Portfolio"),
+  siteUrl: getEnvVariable("NEXT_PUBLIC_SITE_URL", "https://faheemhassan.dev"),
   contactEmail: getEnvVariable(
     "NEXT_PUBLIC_CONTACT_EMAIL",
-    "contact@default.com"
+    "info@faheemhassan.dev"
   ),
 };
