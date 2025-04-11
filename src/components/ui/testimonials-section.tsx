@@ -1,6 +1,8 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 
+// ... (keep your testimonials array exactly the same)
 const testimonials = [
   // Column 1
   [
@@ -109,27 +111,29 @@ const testimonials = [
   ],
 ];
 
-
-
 function TestimonialsSection() {
   return (
     <section id="testimonies" className="py-20 bg-slate-900">
       <div className="max-w-7xl mx-8 md:mx-10 lg:mx-20 xl:mx-auto">
+        {/* ... (keep your header section exactly the same) */}
         <div className="transition duration-500 ease-in-out transform scale-100 translate-x-0 translate-y-0 opacity-100">
-          <div className="mb-12 space-y-5 md:mb-16 md:text-center">
+          <div className="mb-12 space-y-5 md:mb-16 md:text-left">
             <div className="inline-block px-3 py-1 text-sm font-semibold text-indigo-100 rounded-lg md:text-center text-cn bg-[#202c47] bg-opacity-60 hover:cursor-pointer hover:bg-opacity-40">
               Words from Others
             </div>
-            <h1 className="text-indigo-600 mb-5 text-3xl font-semibold md:text-center md:text-5xl font-anton ">
-              It&apos;s not just me.
+            <h1 className="text-indigo-600 mb-0 text-5xl font-semibold md:text-left md:text-6xl font-anton ">
+              It&apos;s not <span className="text-white">just me</span>.
             </h1>
-            <p className="text-xl text-stone-200 md:text-center md:text-2xl">
+            <p
+              className="text-lg text-gray-300 md:text-left md:text-xl mt-[3px]"
+              style={{ marginTop: "3px" }}
+            >
               Here&apos;s what others have to say about my services.
             </p>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8 testimonials-container">
           {testimonials.map((column, columnIndex) => (
             <ul
               key={columnIndex}
@@ -144,10 +148,10 @@ function TestimonialsSection() {
               {column.map((testimonial) => (
                 <li
                   key={testimonial.id}
-                  className="text-sm leading-6  group  group-hover:blur-sm hover:blur-none"
+                  className="text-sm leading-6 testimonial-item transition-[filter] duration-400"
                 >
                   <div className="relative group">
-                    <div className="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200"></div>
+                    <div className="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-indigo-600 to-indigo-800 blur duration-400 group-hover:opacity-100 group-hover:duration-200"></div>
                     <a href={testimonial.link} className="cursor-pointer">
                       <div className="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
                         <div className="flex items-center space-x-4">
@@ -168,7 +172,7 @@ function TestimonialsSection() {
                             </p>
                           </div>
                         </div>
-                        <p className="leading-normal text-gray-300 text-md">
+                        <p className="leading-normal text-gray-300 text-[16px]">
                           {testimonial.text}
                         </p>
                       </div>
@@ -180,6 +184,13 @@ function TestimonialsSection() {
           ))}
         </div>
       </div>
+      <style jsx global>{`
+        .testimonials-container:hover .testimonial-item:not(:hover) {
+          filter: blur(4px);
+          transition: filter 0.2s ease;
+          transition-duration: 400ms;
+        }
+      `}</style>
     </section>
   );
 }
