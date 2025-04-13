@@ -7,6 +7,22 @@ const testimonials = [
   // Column 1
   [
     {
+      id: 8,
+      image: "/img/testimonials/damien.png",
+      name: "Damien Robert James D",
+      role: "Director techomatic.co.uk",
+      text: "The website not only looks great but also performs exceptionally well. It has greatly boosted our online presence!",
+      link: "https://www.techomatic.co.uk/",
+    },
+    {
+      id: 3,
+      image: "/img/testimonials/tobias.png",
+      name: "Tobias B. Conrad",
+      role: "CEO of saleswonder.biz",
+      text: "The level of professionalism and expertise displayed in web development was impressive. Our website was built exactly to our requirements!",
+      link: "https://saleswonder.biz/",
+    },
+    {
       id: 1,
       image: "/img/testimonials/noman-ghaffar.png",
       name: "Noman Ghaffar",
@@ -14,83 +30,51 @@ const testimonials = [
       text: "Working with Muhammad Faheem Hassan has been an absolute pleasure! They developed a high-quality, fully optimized website for FineGap, exceeding our expectations. Their expertise in WordPress, custom plugins, and responsive design made a huge difference. We highly recommend their services to anyone looking for a top-notch web development partner!",
       link: "https://finegap.com/",
     },
-    {
-      id: 2,
-      image: "/img/testimonials/noman-ghaffar.png",
-      name: "Ayesha Khan",
-      role: "Marketing Manager",
-      text: "Muhammad Faheem Hassan delivered an outstanding website for our company. The design was sleek, and the performance was top-notch. Highly recommended!",
-      link: "https://finegap.com/",
-    },
-    {
-      id: 3,
-      image: "/img/testimonials/noman-ghaffar.png",
-      name: "Ali Raza",
-      role: "Founder of TechX",
-      text: "The level of professionalism and expertise displayed in web development was impressive. Our website was built exactly to our requirements!",
-      link: "https://finegap.com/",
-    },
-    {
-      id: 4,
-      image: "/img/testimonials/noman-ghaffar.png",
-      name: "Sarah Ahmed",
-      role: "Product Manager",
-      text: "Amazing work! The attention to detail and smooth functionality of our website have significantly improved user engagement. Thank you!",
-      link: "https://finegap.com/",
-    },
   ],
   // Column 2
   [
     {
+      id: 4,
+      image: "/img/testimonials/arman.png",
+      name: "Arman Naseer",
+      role: "CEO of AR-Webcrafts",
+      text: "Amazing work! The attention to detail and smooth functionality of our website have significantly improved user engagement. Thank you!",
+      link: "https://www.arwebcrafts.com/",
+    },
+    {
       id: 5,
-      image: "/img/testimonials/noman-ghaffar.png",
-      name: "Hassan Tariq",
-      role: "CTO at InnovateHub",
+      image: "/img/testimonials/asad.png",
+      name: "Asad",
+      role: "CEO of easemartus.com",
       text: "Incredible service! The website was delivered on time and exceeded all expectations in terms of design and functionality.",
-      link: "https://finegap.com/",
+      link: "https://www.easemartus.com/",
     },
     {
       id: 6,
-      image: "/img/testimonials/noman-ghaffar.png",
-      name: "Maria Siddiqui",
-      role: "UI/UX Designer",
+      image: "/img/testimonials/asim-ghaffar.png",
+      name: "Asim Ghaffar",
+      role: "CEO of cubixsol.com",
       text: "The creativity and technical expertise in the development of our platform were phenomenal. We received great feedback from users!",
-      link: "https://finegap.com/",
-    },
-    {
-      id: 7,
-      image: "/img/testimonials/noman-ghaffar.png",
-      name: "Usman Farooq",
-      role: "Business Analyst",
-      text: "A seamless experience from start to finish. The team was very professional and handled every request with great care.",
-      link: "https://finegap.com/",
-    },
-    {
-      id: 8,
-      image: "/img/testimonials/noman-ghaffar.png",
-      name: "Fatima Shah",
-      role: "E-commerce Manager",
-      text: "The website not only looks great but also performs exceptionally well. It has greatly boosted our online presence!",
-      link: "https://finegap.com/",
+      link: "https://cubixsol.com/",
     },
   ],
   // Column 3
   [
     {
-      id: 9,
-      image: "/img/testimonials/noman-ghaffar.png",
-      name: "Rizwan Malik",
-      role: "Software Engineer",
-      text: "Highly professional and efficient. Our website was built with clean code and excellent design!",
-      link: "https://finegap.com/",
+      id: 2,
+      image: "/img/testimonials/murtaza.png",
+      name: "Murtaza",
+      role: "CEO of Aoun Solutions",
+      text: "Muhammad Faheem Hassan delivered an outstanding website for our company. The design was sleek, and the performance was top-notch. Highly recommended!",
+      link: "https://aounsolutions.com/",
     },
     {
-      id: 10,
-      image: "/img/testimonials/noman-ghaffar.png",
-      name: "Zara Mehmood",
-      role: "Digital Marketer",
-      text: "Our website now runs smoothly and loads quickly. The development team did an exceptional job!",
-      link: "https://finegap.com/",
+      id: 7,
+      image: "/img/testimonials/arif.png",
+      name: "Muhammad Arif",
+      role: "Director (IELTS/PTE Trainer)",
+      text: "A seamless experience from start to finish. The team was very professional and handled every request with great care.",
+      link: "https://4skills.co/",
     },
     {
       id: 11,
@@ -98,14 +82,6 @@ const testimonials = [
       name: "Bilal Ahmed",
       role: "Project Coordinator",
       text: "Fantastic collaboration! The website's responsiveness and usability have greatly improved our customer engagement.",
-      link: "https://finegap.com/",
-    },
-    {
-      id: 12,
-      image: "/img/testimonials/noman-ghaffar.png",
-      name: "Mehwish Tariq",
-      role: "Freelance Consultant",
-      text: "One of the best web development experiences we've had. The team understood our requirements perfectly!",
       link: "https://finegap.com/",
     },
   ],
@@ -151,9 +127,9 @@ function TestimonialsSection() {
                   className="text-sm leading-6 testimonial-item transition-[filter] duration-400"
                 >
                   <div className="relative group">
-                    <div className="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-indigo-600 to-indigo-800 blur duration-400 group-hover:opacity-100 group-hover:duration-200"></div>
+                    <div className="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-indigo-600 to-indigo-800 blur duration-400 group-hover:opacity-100 group-hover:duration-200 "></div>
                     <a href={testimonial.link} className="cursor-pointer">
-                      <div className="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
+                      <div className="group-hover:scale-[1.1] relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5 transition-transform duration-300 ease-in-out">
                         <div className="flex items-center space-x-4">
                           <Image
                             src={testimonial.image}
@@ -186,9 +162,11 @@ function TestimonialsSection() {
       </div>
       <style jsx global>{`
         .testimonials-container:hover .testimonial-item:not(:hover) {
-          filter: blur(4px);
+          filter: blur(3px);
           transition: filter 0.2s ease;
-          transition-duration: 400ms;
+          transition-duration: 300ms;
+          scale: 0.98;
+          transition: scale 0.3s ease;
         }
       `}</style>
     </section>

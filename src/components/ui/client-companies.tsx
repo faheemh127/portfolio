@@ -37,7 +37,7 @@ function ClientCompanies() {
     >
       <div className="py-[80px] md:py-[150px] w-full max-w-[1400px] m-auto">
         <div className="flex justify-between items-center mb-10 md:mb-16">
-          <h1 className="text-4xl md:text-5xl leading-1 md:leading-[3.5rem] font-anton max-w-[600px]">
+          <h1 className="text-4xl md:text-6xl leading-1 md:leading-[4.2rem] font-anton max-w-[800px]">
             Loved by Peoples, trusted by{" "}
             <span className="text-indigo-600"> companies worldwide </span>
           </h1>
