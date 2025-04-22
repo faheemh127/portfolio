@@ -79,8 +79,8 @@ const testimonials = [
     {
       id: 11,
       image: "/img/testimonials/noman-ghaffar.png",
-      name: "Bilal Ahmed",
-      role: "Project Coordinator",
+      name: "Ahsan Bajwa",
+      role: "Digital Marketer",
       text: "Fantastic collaboration! The website's responsiveness and usability have greatly improved our customer engagement.",
       link: "https://finegap.com/",
     },

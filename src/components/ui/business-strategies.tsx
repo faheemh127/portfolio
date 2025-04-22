@@ -2,6 +2,7 @@ import React from "react";
 import { MoveRight } from "lucide-react";
 import Image from "next/image";
 import BtnDownloadResume from "./btn-download-resume";
+import PrimaryBtn from "./primary-btn";
 function BusinessStrategies() {
   return (
     <div className="relative bg-gray-900">
@@ -23,19 +24,31 @@ function BusinessStrategies() {
                 </h4>
                 <ul className="text-white">
                   <li className="flex gap-3 mb-3 items-start">
-                    <MoveRight size={20} className="text-indigo-300 mt-1 flex-shrink-0" />
+                    <MoveRight
+                      size={20}
+                      className="text-indigo-300 mt-1 flex-shrink-0"
+                    />
                     Growth-Focused Development Approach
                   </li>
                   <li className="flex gap-3 mb-3 items-start">
-                    <MoveRight size={20} className="text-indigo-300 mt-1 flex-shrink-0" />
+                    <MoveRight
+                      size={20}
+                      className="text-indigo-300 mt-1 flex-shrink-0"
+                    />
                     Simplified Website Management Solutions
                   </li>
                   <li className="flex gap-3 mb-3 items-start">
-                    <MoveRight size={20} className="text-indigo-300 mt-1 flex-shrink-0" />
+                    <MoveRight
+                      size={20}
+                      className="text-indigo-300 mt-1 flex-shrink-0"
+                    />
                     Seamless Data Migration Assistance
                   </li>
                   <li className="flex gap-3 mb-3 items-start">
-                    <MoveRight size={20} className="text-indigo-300 mt-1 flex-shrink-0" />
+                    <MoveRight
+                      size={20}
+                      className="text-indigo-300 mt-1 flex-shrink-0"
+                    />
                     Custom API Integration Services
                   </li>
                 </ul>
@@ -105,19 +118,31 @@ function BusinessStrategies() {
                 </h4>
                 <ul className="text-white">
                   <li className="flex gap-3 mb-3 items-start">
-                    <MoveRight size={20} className="text-indigo-300 mt-1 flex-shrink-0" />
+                    <MoveRight
+                      size={20}
+                      className="text-indigo-300 mt-1 flex-shrink-0"
+                    />
                     Future-Ready Architecture
                   </li>
                   <li className="flex gap-3 mb-3 items-start">
-                    <MoveRight size={20} className="text-indigo-300 mt-1 flex-shrink-0" />
+                    <MoveRight
+                      size={20}
+                      className="text-indigo-300 mt-1 flex-shrink-0"
+                    />
                     Intuitive User Experiences
                   </li>
                   <li className="flex gap-3 mb-3 items-start">
-                    <MoveRight size={20} className="text-indigo-300 mt-1 flex-shrink-0" />
+                    <MoveRight
+                      size={20}
+                      className="text-indigo-300 mt-1 flex-shrink-0"
+                    />
                     Robust Security Implementation
                   </li>
                   <li className="flex gap-3 mb-3 items-start">
-                    <MoveRight size={20} className="text-indigo-300 mt-1 flex-shrink-0" />
+                    <MoveRight
+                      size={20}
+                      className="text-indigo-300 mt-1 flex-shrink-0"
+                    />
                     Actionable Performance Insights
                   </li>
                 </ul>
@@ -125,7 +150,7 @@ function BusinessStrategies() {
                   I develop SaaS platforms with powerful features that
                   streamline operations and foster business growth.
                 </p>
-                <BtnDownloadResume />
+                <PrimaryBtn />
               </div>
               <div className="__right w-full md:w-1/2">
                 <Image

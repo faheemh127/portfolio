@@ -30,15 +30,15 @@ export default function Navigation() {
             </NavigationMenuLink>
           </Link>
 
-          <Link href="#client-companies" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Trusted Clients
-            </NavigationMenuLink>
-          </Link>
-
           <Link href="#testimonies" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Reviews
+            </NavigationMenuLink>
+          </Link>
+
+          <Link href="#benefit" legacyBehavior passHref>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              Benefit
             </NavigationMenuLink>
           </Link>
 

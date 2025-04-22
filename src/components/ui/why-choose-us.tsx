@@ -2,7 +2,7 @@ import React from "react";
 import { FileCode, Sparkle, Headset } from "lucide-react";
 function WhyChooseUs() {
   return (
-    <div className="w-full bg-gray-950 relative overflow-hidden">
+    <div id="benefit" className=" w-full bg-gray-950 relative overflow-hidden">
       <div className="absolute w-[200px] h-10 bg-indigo-600 top-0 -left-[75px] blur-[120px] rotate-45"></div>
       <div className="max-w-6xl mx-auto px-5 md:px-0 py-16 md:py-[6rem]">
         <h3 className="text-4xl md:text-6xl font-bold font-anton text-white mb-5 md:mb-10">
