@@ -3,7 +3,7 @@ import React from "react";
 
 const JobPost = () => {
   return (
-    <div className="max-w-3xl mx-auto px-6 py-14 bg-white rounded-2xl shadow-md mt-10 border border-gray-200">
+    <div className="max-w-3xl mx-auto px-6 py-14 bg-white rounded-xl shadow-md mt-10 border border-gray-200">
       <h1 className="text-3xl font-bold text-gray-800 mb-4">
         📢 We&#39;re Hiring – Data Entry Operator
       </h1>
@@ -50,7 +50,7 @@ const JobPost = () => {
       <div className="mb-4">
         <p className="text-gray-700">
           <strong>Contact Number:</strong>{" "}
-          <a href="tel:03068493810" className="text-blue-600 hover:underline">
+          <a href="tel:03068493810" className="text-indigo-700 hover:underline">
             0306 8493810
           </a>
         </p>
@@ -72,7 +72,7 @@ const JobPost = () => {
           href="https://wa.me/923068493810"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block bg-green-600 text-white px-6 py-2 rounded-full hover:bg-green-700 transition"
+          className="inline-block bg-indigo-700 text-white px-6 py-2 rounded-md hover:bg-indigo-600 transition"
         >
           📩 Send Your CV Now
         </a>
